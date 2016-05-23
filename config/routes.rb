@@ -17,11 +17,17 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+
+   root 'static#index'
+
   resources :home , only: [:index]
 
-  root "home#index"
 
-  resources :users
+  resources :users, only: [:show, :edit, :update, :destroy]
+
+
+  get "/auth/:provider/callback" => "sessions#create_from_omniauth"
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
