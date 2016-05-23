@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require chosen
  */
 
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
@@ -20,3 +21,8 @@
 
 
 /* Icons */
+
+.text-center {
+	text-align: center;
+	vertical-align: middle;
+}
