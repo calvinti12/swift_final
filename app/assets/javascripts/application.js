@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-1.11.0.min
+//= require jquery.leanModal.min
 //= require turbolinks
 //= require_tree .
