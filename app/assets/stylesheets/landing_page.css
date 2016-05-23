@@ -185,6 +185,7 @@ a.big-swift {
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+			background: transparent;
   }
 
   /* Button 4 */
@@ -441,7 +442,7 @@ color: black;
 
 
 
-#submit {
+.submit {
   width: 20%;
   height: 50px;
   background: #E86C8D;
@@ -456,7 +457,7 @@ color: black;
 }
 
 
-#submit:hover {
+.submit:hover {
   background: #d45d7d;
 }
 
@@ -583,6 +584,7 @@ label.light {
 
 }*/
 
+/*LogIn Popup*/
 
 #lean_overlay {
         position: fixed;
@@ -605,17 +607,26 @@ label.light {
 }
 
 #modal_trigger {
-        margin: 40px auto;
+        margin: 20px auto;
         width: 200px;
         display: block;
-        border: 1px solid #DDD;
+        border: 2px solid #DDD;
+        border-radius: 4px;
+}
+
+#modal_trigger:hover {
+        margin: 20px auto;
+        width: 200px;
+        display: block;
+        border: 2px solid #00E6AD;
         border-radius: 4px;
 }
 
 .btn {
         padding: 10px 20px;
-        background: #F4F4F2;
+        background: transparent;
 }
+
 
 .btn_red {
         background: #ED6347;
@@ -655,7 +666,12 @@ a.btn_red {
 .popupHeader {
         font-size: 16px;
         text-transform: uppercase;
-}
+				font-size: 16px;
+	    	text-transform: uppercase;
+	    	color: black;
+	    	font-family: 'Josefin Sans', sans-serif;
+	}
+
 
 .popupHeader {
         background: #F4F4F2;
@@ -663,6 +679,7 @@ a.btn_red {
         padding: 10px 20px;
         border-bottom: 1px solid #DDD;
         font-weight: bold;
+
 }
 
 .popupHeader .modal_close {
@@ -677,6 +694,7 @@ a.btn_red {
 }
 
 .popupBody {
+				font-family: 'Josefin Sans', sans-serif;
         padding: 20px;
 }
 /* Social Login Form */
@@ -701,14 +719,17 @@ a.btn_red {
         color: #FFF;
         font-size: 16px;
         text-align: center;
+
 }
 
 .social_login .fb .icon {
         background: #3B5998;
+				    padding: 7px 18px;
 }
 
 .social_login .google .icon {
         background: #DD4B39;
+				  padding: 7px 18px;
 }
 
 .social_login .icon_title {
@@ -718,6 +739,9 @@ a.btn_red {
         font-weight: bold;
         font-size: 16px;
         color: #777;
+				position: relative;
+				top: 4px;
+				left: 30px;
 }
 
 .social_login .social_box:hover {
@@ -818,4 +842,32 @@ a.btn_red {
         margin-bottom: 10px;
         clear: both;
         overflow: hidden;
+}
+
+.fa-facebook{
+    margin-left: -2px;
+
+}
+.fa-google-plus{
+
+	margin-left: -5px;
+}
+
+.header_title{
+		position: relative;
+	    top: 2px;
+	    left: 111px;
+	    font-size: 18px;
+
+}
+
+.sign_up_button{
+	position: absolute;
+	left: 510px;
+	top: 320px;
+
+}
+
+.btn:hover {
+    background: transparent;
 }
