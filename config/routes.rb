@@ -21,7 +21,10 @@ Rails.application.routes.draw do
 
   root "home#index"
 
-  resources :users
+  resources :users, only: [:show, :edit, :update, :destroy] 
+
+
+  get "/auth/:provider/callback" => "sessions#create_from_omniauth"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
