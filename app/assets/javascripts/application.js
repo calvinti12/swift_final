@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).on('ready page:load', function() {
+  return CountryStateSelect({
+    country_id: "country_field_id",
+    state_id: "state_field_id"
+  });
+});

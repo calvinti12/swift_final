@@ -1,0 +1,34 @@
+
+<form class="form-inline">
+  <div class="gender-preference-field">
+   <%= form.label :I_am_a%>
+   <%= form.select :gender, options_for_select([["Male"],["Female"]])%>
+
+   <%= form.label :looking_for %>
+   <%= form.select :preference, options_for_select([["Female"],["Male"],["Both"]])%>
+  </div>
+</form>
+
+<div class="country-field"><strong>Country</strong>
+  <%= form.country_select :country, collection: CountryStateSelect.countries_collection %>
+</div>
+
+<div class="state-field">
+  <%= form.label :state%>
+  <%= form.text_field :state%>
+
+  <%#= options = { form: form, field_names: { :country => :country, :state => :state_field } }
+
+    form.state_field, CountryStateSelect.state_options(options) %>
+
+</div>
+
+<div class="nick-name-field">
+  <%= form.label :nick_name %>
+  <%= form.text_field :nick_name%>
+</div>
+
+<div class="description-field">
+   <%= form.label :description %>
+   <%= form.text_field :description %>
+</div>

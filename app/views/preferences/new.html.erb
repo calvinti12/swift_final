@@ -1,0 +1,14 @@
+<div class="container text-center">
+
+ <h1> Preferences</h1>
+ 
+	<%= form_for @preference do |form| %>
+      <%= render partial: '/preferences/form', object: form %>
+
+      <div class="submit-field">
+        <%= form.submit"Save Your Preferences"%>
+      </div>
+
+    <% end %>
+
+</div>
