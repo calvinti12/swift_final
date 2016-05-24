@@ -1,5 +1,5 @@
 function startTimer () {
-var totaltime = 60;
+var totaltime = 10;
 function update(percent){
   var deg;
   if(percent<(totaltime/2)){
@@ -25,6 +25,9 @@ myCounter = setInterval(function () {
   if(count==0){
     less = 0
     disconnect()
+    popuplike()
+    timerhide()
+    videohide()
     }; // find proper fix for this issue. javascript won't stop :(
   // if(count==0) clearInterval(myCounter);
 }, 1000);
@@ -73,3 +76,17 @@ session.on("sessionDisconnected", function(event){
   console.log("sessionDisconnected event fired");
   // Session has been disconnected. Include any clean up code here
 });
+
+
+function popuplike() {
+    $("#like").show();
+}
+
+function timerhide() {
+	$("#timer").hide();
+}
+
+function videohide() {
+	$("#publisher").hide()
+	$("#subscribers").hide()
+}
