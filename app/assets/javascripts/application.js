@@ -24,4 +24,3 @@ $(document).on('ready page:load', function() {
     state_id: "state_field_id"
   });
 });
-

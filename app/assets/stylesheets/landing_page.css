@@ -24,7 +24,7 @@ h1 {
 	font-size: 2rem;
 	display: inline-block;
   padding-top: 5px;
-    padding-bottom: 21px;
+  padding-bottom: 21px;
 	font-weight: 400;
 	position: relative;
 	opacity: 1;
@@ -313,11 +313,11 @@ height: 100px;
 /*Info logos*/
 
 .heart_pic{
-width : 200px;
-height: 200px;
-position: absolute;
-bottom: -380px;
-left: 150px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: -347px;
+  left: 150px;
 
 }
 
@@ -326,8 +326,8 @@ left: 150px;
   width : 200px;
   height: 200px;
   position: absolute;
-  bottom: -380px;
-      left: 530px;
+  bottom: -347px;
+  left: 530px;
 
 }
 
@@ -337,15 +337,15 @@ left: 150px;
   width : 150px;
   height: 150px;
   position: absolute;
-  bottom: -398px;
-      left: 908px;
+  bottom: -347px;
+  left: 908px;
 
 }
 .mobile_pic{
   width : 150px;
   height: 150px;
   position: absolute;
-  bottom: -335px;
+  bottom: -347px;
   left: 980px;
 
 }
