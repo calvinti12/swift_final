@@ -7,3 +7,16 @@
   <%= form.label :password %>
   <%= form.password_field :password %>
 </div>
+
+
+
+<%= form_for @users, :html => {:multipart => true} do |f| %>
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.file_field :avatar %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
