@@ -28,6 +28,8 @@ Rails.application.routes.draw do
 
   get "/auth/:provider/callback" => "sessions#create_from_omniauth"
 
+  get "/video_call" => "videos#show"
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
