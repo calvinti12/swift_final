@@ -16,7 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-
+# opentok used for tokbox authentication and session creation
+gem 'opentok'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -47,7 +48,9 @@ gem "figaro"
 #gem for countries and states list
 gem 'country_select'
 gem 'country_state_select', '3.0.0'
-
+#This gem provides a simple and extremely flexible way to upload files from Ruby applications.
+gem 'carrierwave'
+gem "mini_magick"
 
 ##############################################################
 

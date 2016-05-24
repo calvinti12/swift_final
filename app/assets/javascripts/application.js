@@ -16,6 +16,8 @@
 //= require jquery.leanModal.min
 //= require turbolinks
 //= require_tree .
+//= require videos
+
 $(document).on('ready page:load', function() {
   return CountryStateSelect({
     country_id: "country_field_id",
