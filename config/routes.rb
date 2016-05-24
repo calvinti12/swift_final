@@ -9,9 +9,9 @@ Rails.application.routes.draw do
       only: [:create, :edit, :update]
   end
 
-  get "/sign_in" => "clearance/sessions#new", as: "sign_in"
-  delete "/sign_out" => "clearance/sessions#destroy", as: "sign_out"
-  get "/sign_up" => "clearance/users#new", as: "sign_up"
+  # get "/sign_in" => "clearance/sessions#new", as: "sign_in"
+  delete "/sign_out" => "sessions#destroy", as: "sign_out"
+  # get "/sign_up" => "clearance/users#new", as: "sign_up"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -23,10 +23,12 @@ Rails.application.routes.draw do
   resources :home , only: [:index]
 
 
-  resources :users, only: [:show, :edit, :update, :destroy]
+  resources :users, only: [:new, :create, :show, :edit, :update, :destroy]
 
 
   get "/auth/:provider/callback" => "sessions#create_from_omniauth"
+
+  get "/video_call" => "videos#show"
 
 
   # Example of regular route:

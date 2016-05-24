@@ -1,0 +1,128 @@
+.swift-logo{
+border: 0.5px solid black;
+width: 100px;
+height: 60px;
+position: absolute;
+left: 12px;
+    top: 31px;
+}
+
+.nav-bar{
+  width: 55px;
+  height: 55px;
+  border: 1px solid black;
+  position: absolute;
+  right: 17px;
+  top: 19px;
+
+}
+
+.video-large{
+  border: 1px solid black;
+  height: 320px;
+  width: 480px;
+  position: absolute;
+  right: 450px;
+  top: 100px;
+  z-index: -4
+}
+
+.timer-left{
+  border: 1px solid black;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 250px;
+  right: 336px;
+
+}
+.video-small{
+  border: 1px solid black;
+  height: 100px;
+  width: 125px;
+  position: absolute;
+  right: 458px;
+  top: 492px;
+}
+
+.leave-button{
+  border: 1px solid black;
+  height: 40px;
+  width: 100px;
+  position: absolute;
+  top: 625px;
+  left: 445px;
+}
+
+.flash-card-profile{
+  border:1px solid black;
+  height: 318px;
+  width: 235px;
+  position: absolute;
+  right: 170px;
+  top: 260px;
+}
+
+#subscribers {
+    position: relative;
+    z-index: -1;
+    width: 480px;
+    height: 320px;
+    border: solid;
+}
+
+#publisher {
+    z-index: 0;
+    right: 0%;
+    bottom: 0%;
+    position: absolute
+}
+
+#container-publisher {
+    width: 120px;
+    height: 90px;
+    border: solid;
+    position: absolute;
+    z-index: 99;
+    right: 24.3%;
+    bottom: 46.5%;
+}
+
+#container-subscriber {
+  width: 480px;
+  height: 320px;
+  border: solid;
+    z-index: -1;
+
+}
+
+#loading {
+    top: 60px;
+    align-self: center;
+    position:absolute;
+    z-index:-3;
+    left: 133px;
+}
+
+.uil-ripple {
+    top: 120px;
+    position:absolute;
+    opacity:.5;
+    z-index:-3;
+    left: 133px;
+}
+
+.ld-l {opacity:0;animation: ld-in 3s 0.0s ease infinite;}
+.ld-o {opacity:0;animation: ld-in 3s 0.1s ease infinite;}
+.ld-a {opacity:0;animation: ld-in 3s 0.2s ease infinite;}
+.ld-d {opacity:0;animation: ld-in 3s 0.3s ease infinite;}
+.ld-i {opacity:0;animation: ld-in 3s 0.4s ease infinite;}
+.ld-n {opacity:0;animation: ld-in 3s 0.5s ease infinite;}
+.ld-g {opacity:0;animation: ld-in 3s 0.6s ease infinite;}
+
+@keyframes ld-in {
+  0% {opacity:0;transform:scale(0);}
+  30% {opacity:1;transform:scale(1);}
+  100% {opacity:1;transform:scale(1);}
+}
+

@@ -7,9 +7,12 @@ class User < ActiveRecord::Base
     has_many :authentications, :dependent => :destroy
     mount_uploader :image , ImageUploader
   def self.create_with_auth_and_hash(authentication,auth_hash)
-  	# byebug
+
     create! do |u|
       u.first_name = auth_hash['extra']["raw_info"]["name"]
+      u.birthday = auth_hash['extra']["raw_info"]["user_birthday"]
+      u.gender = auth_hash['extra']["raw_info"]["gender"]
+      # u.locale = auth_hash['extra']["raw_info"]["locale"]
       u.email = auth_hash["extra"]["raw_info"]["email"] || "#{auth_hash['extra']['raw_info']['id']}@facebook.com"
       u.encrypted_password = SecureRandom.urlsafe_base64
       u.remember_token = SecureRandom.urlsafe_base64

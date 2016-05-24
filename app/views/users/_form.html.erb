@@ -1,11 +1,32 @@
-<div class="text-field">
-  <%= form.label :email %>
-  <%= form.text_field :email, type: 'email' %>
+<%unless current_user %>
+
+  <!-- facebook login -->
+
+<%end%>
+
+<div class="prefer-gender-field">
+  <%= form.label :prefer_gender %>
+  <%= form.text_field :prefer_gender %>
 </div>
 
-<div class="password-field">
-  <%= form.label :password %>
-  <%= form.password_field :password %>
+<div class="prefer-country-field">
+  <%= form.label :prefer_country %>
+  <%= form.text_field :prefer_country%>
+</div>
+
+<div class="prefer-state-field">
+  <%= form.label :prefer_state %>
+  <%= form.text_field :prefer_state%>
+</div>
+
+<div class="prefer-age-field">
+  <%= form.label :prefer_age %>
+  <%= form.text_field :prefer_age %>
+</div>
+
+<div class="description-field">
+  <%= form.label :description %>
+  <%= form.text_field :description%>
 </div>
 
 
