@@ -55,9 +55,7 @@ class UsersController < Clearance::UsersController
 
 	# sanitize the user_params to allow these data field to store in the database
 	def permit_params
-
-		params.require(:user).permit(:first_name, :last_name, :birthday, :description, :country, :state, :gender, :prefer_gender, :prefer_country, :prefer_age, :email, :password, :image)
-
+		params.require(:user).permit(:first_name, :last_name, :birthday, :description, :country, :state, :gender, :prefer_gender, :prefer_country, :prefer_age, :email, :password)
 	end
 
 end
