@@ -11,7 +11,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :prefer_gender
       t.string :prefer_country
       t.string :prefer_state
-      t.integer :perfer_age
+      t.integer :prefer_age
       t.timestamps null: false
       t.string :email, null: false
       t.string :encrypted_password, limit: 128, null: false

@@ -1,10 +1,6 @@
-	<%=current_user.first_name%>&nbsp<%=current_user.last_name%>
-
-	<%=image_tag(current_user.avatar)%>
-
 	<p> 
-		<strong>Email: </strong> 
-		<%=current_user.email%>
+		<strong>Name: </strong> 
+		<%=current_user.first_name%>
 	</p>
 
 	<p> 
@@ -13,8 +9,8 @@
 	</p>
 
 	<p> 
-		<strong>Description: </strong> 
-		<%=current_user.description%>
+		<strong>Gender: </strong> 
+		<%=current_user.gender%>
 	</p>
 
 	<p> 
@@ -23,26 +19,12 @@
 	</p>
 
 	<p> 
-		<strong>Gender: </strong> 
-		<%=current_user.gender%>
+		<strong>Description: </strong> 
+		<%=current_user.description%>
 	</p>
 
 	<p> 
-		<strong>Prefer Gender: </strong> 
-		<%=current_user.prefer_gender%>
+		<strong>Email: </strong> 
+		<%=current_user.email%>
 	</p>
-
-	<p> 
-		<strong>Prefer Country: </strong> 
-		<%=current_user.prefer_country%>
-	</p>
-
-	<p> 
-		<strong>Prefer State: </strong> 
-		<%=current_user.prefer_state%>
-	</p>
-
-	<p> 
-		<strong>Prefer age: </strong> 
-		<%=current_user.prefer_age%>
-	</p>
+<!--  -->
