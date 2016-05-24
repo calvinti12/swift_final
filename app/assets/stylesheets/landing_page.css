@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
-body {
-	background:white;
+.landing_body {
+	background: white !important;
 	color: #FFF;
 
 }
@@ -33,6 +33,13 @@ h1 {
       top: -114px;
 }
 
+#main_slogan{
+	position: relative;
+top: -50px;
+left: 152px;
+line-height: 2.5;
+}
+
 .is-loading h1 {
 	transform: scale(0.9);
 	opacity: 0;
@@ -45,7 +52,7 @@ h1:after {
 	content: "";
 	background: white;
 	display: block;
-	position: absolute;
+	position: relative;;
 	transition: width 0.4s ease;
 	transition-delay: 0.8s;
 }
@@ -352,8 +359,8 @@ height: 100px;
 
 
 p {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif !important;
+  font-size: 30px !important;
   color : black;
 }
 
@@ -862,9 +869,9 @@ a.btn_red {
 }
 
 .sign_up_button{
-	position: absolute;
-	left: 510px;
-	top: 320px;
+	position: relative;
+	left: -260px;
+	top: 84px;
 
 }
 

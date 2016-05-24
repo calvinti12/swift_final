@@ -24,7 +24,7 @@ class UsersController < Clearance::UsersController
   end
 
   def update
-  	byebug
+
 	@user = User.find(params[:id])
 	@user.update(permit_params)
 	 if @user.save

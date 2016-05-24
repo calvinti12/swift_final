@@ -3,19 +3,15 @@ $(document).ready(function() {
 	setTimeout(function() {
 		$("#main").removeClass("is-loading");
 	}, 100);
-});
 
 // menu
-$(document).ready(function() {
   $(".menu").click(function(){
     $(this).toggleClass("active");
   });
-});
 
 
 
 // Plugin options and our code
-$(document).ready(function() {
   $("#modal_trigger").leanModal({
           top: 100,
           overlay: 0.6,
