@@ -31,7 +31,12 @@ ActiveRecord::Schema.define(version: 20160524034613) do
     t.integer  "age"
     t.string   "description"
     t.string   "country"
+    t.string   "state"
     t.string   "gender"
+    t.string   "prefer_gender"
+    t.string   "prefer_country"
+    t.string   "prefer_state"
+    t.integer  "prefer_age"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
     t.string   "email",                          null: false

@@ -1,4 +1,5 @@
 class UsersController < Clearance::UsersController
+	protect_from_forgery :except => [:update]
 
   def new
   	@user = User.new
@@ -24,13 +25,8 @@ class UsersController < Clearance::UsersController
   end
 
   def update
-
-  	current_user.update(params_from_ajax)
-
-
-	@user = User.find(params[:id])
-	@user.update(permit_params)
-
+  	byebug
+  	current_user.update(country: params[:country], state: params[:state], gender: params[:gender], prefer_gender: params[:interIn], prefer_age: params[:prefAge])
 	 if @user.save
 		redirect_to @user
 	 else
