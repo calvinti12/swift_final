@@ -1,5 +1,5 @@
 class UsersController < Clearance::UsersController
-
+  protect_from_forgery :except => [:update]
   def new
   	@user = User.new
   end
@@ -13,11 +13,10 @@ class UsersController < Clearance::UsersController
   end
 
   def update
-
-	@user = User.find(params[:id])
-	@user.update(permit_params)
-	 if @user.save
-		redirect_to @user
+  	prefer_start_age, prefer_end_age = params[:prefAge].split(' - ')
+  	current_user.update(country: params[:country], state: params[:country], gender: params[:gender], age: params[:age], description: params[:description], prefer_start_age: prefer_start_age, prefer_end_age: prefer_end_age)
+	 if current_user.save
+		redirect_to '/home'
 	 else
 		render 'edit'
 	 end

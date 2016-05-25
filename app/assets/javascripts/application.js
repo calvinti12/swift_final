@@ -97,9 +97,11 @@ $( document ).ready(function(){                 // go to video feed with random 
   $( '#video_btn').on('click', function(e){
     e.preventDefault();
     $.ajax({
-      url: '/video_call' 
-      type: 'get',
+      url: '/video_call',
+      type: 'get',                              // loads the variables from the controller
     })
-  })
+    connectSession()                            // connect the session
+    videoShow()                                 // show the video screen 
+  }) 
 })
 
