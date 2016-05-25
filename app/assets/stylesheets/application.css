@@ -22,7 +22,7 @@
 
 /*Nav Bar*/
 .main_nav_bar{
-
+    position: fixed;
 }
 
 ul {
@@ -347,15 +347,20 @@ background-color: transparent;
 
 
 
-.preference_page{
-  position: relative;
-  top: -790px;
-  right: -50px;
+
+
+#navbar_id{
 
 
 }
 
-#navbar_id{
-
+#token_left{
+  position: relative;
+      top: -114px;
+      right: -28px;
+      border: 2px solid black;
+      padding: 9px;
+      width: 39px;
+      height: 39px;
 
 }
