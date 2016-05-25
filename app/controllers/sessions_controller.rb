@@ -8,7 +8,7 @@ class SessionsController < Clearance::SessionsController
     if authentication.user
       user = authentication.user 
       authentication.update_token(auth_hash)
-      @next = edit_user_path(user)
+      @next = home_index_path
 
       @notice = "Signed in!"
     else
