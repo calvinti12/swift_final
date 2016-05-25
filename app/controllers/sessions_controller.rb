@@ -9,12 +9,9 @@ class SessionsController < Clearance::SessionsController
       user = authentication.user 
       authentication.update_token(auth_hash)
       @next = home_index_path
-
-      @notice = "Signed in!"
     else
       user = User.create_with_auth_and_hash(authentication,auth_hash)
       @next = edit_user_path(user)
-      @notice = "User created - confirm or edit details..."
     end
     sign_in(user)
     redirect_to @next, :notice => @notice
