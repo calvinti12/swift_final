@@ -301,7 +301,7 @@ a.big-swift {
 /*Swift-Desc*/
 
 .swift-container{
-height: 100px;
+height: 680px;
 
 }
 
@@ -421,7 +421,7 @@ li{
     color: #3260c7;
     vertical-align: top;
     position: relative;
-    bottom: -610px;
+        bottom: 20px;
     left: 330px;
 }
 

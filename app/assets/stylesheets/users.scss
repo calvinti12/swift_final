@@ -26,7 +26,7 @@ body{
 body{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  @include background-image(linear-gradient(to bottom right,#2CCABA, #1EC68D));
+  background-color: #1DE9B6;
   color: #fff;
 }
 .confirm{
