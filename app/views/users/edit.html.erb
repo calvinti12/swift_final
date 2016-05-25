@@ -1,13 +1,126 @@
-<div id="clearance">
-  <h2><%= t(".title") %></h2>
 
-  <%= form_for @user do |form| %>
-    <%= render partial: '/users/form', object: form %>
-    
-    <div class="submit-field">
-      <%= form.submit %>
+<div class ='preference_page'
+
+    <div class="confirm">
+    <i class='close'>×</i>
+
+
+
+      <form action="#">
+        <h1 id='linezz'>
+        <br>
+        <i class="fa fa-camera-retro fa-lg"></i>
+      </h1>
+
+      <div class="float-label">
+      <input type="text" name="f-name" id="f-name" />
+      <label for="f-name">Country</label>
     </div>
 
-  <% end %>
-</div>
+       <div class="float-label">
+      <input type="text" name="f-name" id="f-name" />
+      <label for="f-name">State</label>
+    </div>
 
+        <div class="float-label">
+      <input type="text" name="f-name" id="f-name" />
+      <label for="f-name">City</label>
+    </div>
+
+
+
+
+
+  <!--Row-->
+  <div class='row'>
+    <div class="float-label">
+      <i class="fa fa-caret-down"></i>
+      <select name="gender" id="gender">
+        <option value=""></option>
+        <option value="male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <label for="gender">Gender</label>
+    </div>
+
+    <div class="float-label">
+      <input type="number" name="age" id="age" maxlength="2" />
+      <label for="age">Age</label>
+    </div>
+
+    <div class="float-label">
+      <i class="fa fa-caret-down"></i>
+      <select name="height" id="height">
+        <option value=""></option>
+        <option value="5-1">5'1"</option>
+        <option value="5-2">5'2"</option>
+        <option value="5-3">5'3"</option>
+        <option value="5-4">5'4"</option>
+        <option value="5-5">5'5"</option>
+        <option value="5-6">5'6"</option>
+        <option value="5-7">5'7"</option>
+        <option value="5-8">5'8"</option>
+        <option value="5-9">5'9"</option>
+        <option value="6-0">6'0"</option>
+        <option value="6-1">6'1"</option>
+        <option value="6-2">6'2"</option>
+        <option value="6-3">6'3"</option>
+        <option value="6-4">6'4"</option>
+        <option value="6-5">6'5"</option>
+        <option value="6-6">6'6"</option>
+        <option value="6-7">6'7"</option>
+        <option value="6-8">6'8"</option>
+        <option value="6-9">6'9"</option>
+        <option value="7-0">7'0"</option>
+      </select>
+      <label for="height">Height</label>
+    </div>
+  </div>
+
+  <div class="float-label">
+    <textarea name="notes" id="notes"></textarea>
+    <label for="notes">About Me</label>
+  </div>
+
+
+<!-- Preference -->
+<!-- -Gender -->
+    <h3 id='gender_text'>I am interested in:</h3><br>
+
+        <div>
+            <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+            <label for="checkbox-1" class="checkbox-custom-label">Male</label>
+        </div>
+
+        <div>
+            <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+            <label for="checkbox-2" class="checkbox-custom-label">Female</label>
+        </div>
+
+        <div>
+            <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+            <label for="checkbox-3"class="checkbox-custom-label">Others</label>
+        </div>
+    </div>
+
+
+    </form>
+
+    <h3 id='Age_text'>Age</h3>
+    <!-- Age -->
+    <div class="slider-box">
+      <label for="ageRange"></label>
+      <input type="text" id="ageRange" readonly>
+      <div id="age-range" class="slider">
+
+
+
+    <!-- Submit button -->
+      <button class="btn_pref" type="submit">Submit</button>
+      <button class="btn_pref" id="clear" type="reset" value="Reset">Reset</button>
+    </form>
+
+      </div>
+    </div>
+  </div>
+</div>
