@@ -34,7 +34,7 @@ myCounter = setInterval(function () {
 };
 
 // Initialize an OpenTok Session object
-var session = TB.initSession(sessionId); 
+var session = TB.initSession(sessionId);
 
 // Initialize a Publisher, and place it into the element with id="publisher"
 var publisher = TB.initPublisher(apiKey, 'publisher', {width: 120, height: 90});

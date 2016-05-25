@@ -10,10 +10,32 @@
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
         <%= csrf_meta_tags %>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     </head>
 
     <body>
+
+
+<!-- Nav-Bar -->
+
+<ul>
+  <div class= "nav_bar_container main_nav">
+    <li><a href="#"><%= image_tag "match.png" , :class => "match_icon"%></a></li>
+    <li><a href="#"><%= image_tag "settings.png" , :class => "settings_icon"%></a></li>
+    <li><a href="#"><%= image_tag "chat.png" , :class => "chat_icon"%></a></li>
+    <li id="log_out_div"><a href="#"><%= image_tag "log_out.png" , :class => "log_out_icon"%></li>
+  </div>
+</ul>
+<!-- Swift Logo -->
+<a class='swift-pic big-swift '>Swift</a>
+
+<!-- Toggle Button -->
+<div class="flip-switch">
+  <input type="checkbox" id="c1">
+  <label for="c1"></label>
+</div>
+
 
       <div id="flash">
         <% flash.each do |key, value| %>
