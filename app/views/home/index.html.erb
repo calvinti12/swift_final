@@ -1,4 +1,6 @@
 
+<button href="#" class="btn button button-4 button-4a icon-arrow-right" id='Go_Premium'> GO PREMIUM </button>
+
     <% @user.each do |u| %>
       <% if (u.prefer_country.downcase == current_user.country.downcase) && (u.country.downcase == current_user.prefer_country.downcase) %>
 
