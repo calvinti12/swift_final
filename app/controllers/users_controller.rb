@@ -24,12 +24,13 @@ class UsersController < Clearance::UsersController
   end
 
   def update
-<<<<<<< HEAD
-=======
 
->>>>>>> master
+  	current_user.update(params_from_ajax)
+
+
 	@user = User.find(params[:id])
 	@user.update(permit_params)
+
 	 if @user.save
 		redirect_to @user
 	 else
@@ -55,6 +56,10 @@ class UsersController < Clearance::UsersController
 			user.password = password
 		end
 	end
+
+	def params_from_ajax
+	end
+	
 
 	# sanitize the user_params to allow these data field to store in the database
 	def permit_params

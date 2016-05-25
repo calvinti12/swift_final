@@ -13,6 +13,19 @@
       </h1>
 
       <div class="float-label">
+      <input type="text" name="f-name" id="f-country">
+      <label for="f-name">Country</label>
+    </div>
+
+       <div class="float-label">
+      <input type="text" name="f-name" id="f-state" />
+      <label for="f-name">State</label>
+    </div>
+
+        <div class="float-label">
+      <input type="text" name="f-name" id="f-city" />
+      <label for="f-name">City</label>
+
       <input type="text" name="f-name" id="f-country" placeholder='Country'/>
       <label for="f-name"></label>
     </div>
@@ -25,6 +38,7 @@
         <div class="float-label">
       <input type="text" name="f-name" id="f-city" placeholder='City' />
       <label for="f-name"></label>
+
     </div>
 
 
@@ -34,6 +48,7 @@
     <div class="float-label">
       <i class="fa fa-caret-down"></i>
       <select name="gender" id="f-gender">
+        <option value=""></option>
         <option value="">Gender</option>
         <option value="male">Male</option>
         <option value="Female">Female</option>
@@ -42,6 +57,10 @@
     </div>
 
     <div class="float-label">
+
+      <input type="number" name="age" id="f-age" maxlength="2" />
+      <label for="age">Age</label>
+
       <input type="number" name="age" id="f-age" maxlength="2" placeholder="Age"/>
       <label for="age"></label>
     </div>
@@ -49,6 +68,9 @@
     <div class="float-label">
       <i class="fa fa-caret-down"></i>
       <select name="height" id="f-height">
+
+        <option value=""></option>
+
         <option value="">Height</option>
         <option value="5-1">5'1"</option>
         <option value="5-2">5'2"</option>
@@ -76,14 +98,23 @@
   </div>
 
   <div class="float-label">
+
+    <textarea name="notes" id="f-notes"></textarea>
+    <label for="notes">About Me</label>
+
     <textarea name="notes" id="notes" placeholder='About Me'></textarea>
     <label for="notes"></label>
+
   </div>
 
 
 <!-- Preference -->
 <!-- -Gender -->
+
+    <h3 id='f-gender_text'>I am interested in:</h3><br>
+
     <h3 id='f-gender-text'>I am interested in:</h3><br>
+
 
         <div>
             <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
@@ -114,7 +145,7 @@
 
 
     <!-- Submit button -->
-      <button class="btn_pref" type="submit">Submit</button>
+      <button class="btn_pref" id="submit_edit" type="submit">Submit</button>
       <button class="btn_pref" id="clear" type="reset" value="Reset">Reset</button>
     </form>
 
