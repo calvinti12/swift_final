@@ -21,6 +21,7 @@ $( document ).ready(function(){
     var inter3 = document.getElementById("checkbox-3").value;
 
     var interIn = inter1 + inter2 + inter3;
+    var id = document.getElementById("submit_edit").value
 
     var data = {
       country: document.getElementById("f-country").value,
@@ -34,11 +35,10 @@ $( document ).ready(function(){
       interIn: interIn
     }
 
-    debugger
     $.ajax({
       url: '/users/' + id, 
-      data: 'test',
-      type: 'PUT'
+      data: data,
+      type: 'PUT',
     })
   })
 });
