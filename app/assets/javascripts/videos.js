@@ -20,9 +20,9 @@ myCounter = setInterval(function () {
 
   count-=less;
   $('#time').html(count);
-    update(count);
+    update(count); 
 
-  if(count==0){
+  if(count==0){       // trigger events when timer runs out 
     less = 0
     disconnect()
     popuplike()
@@ -78,15 +78,23 @@ session.on("sessionDisconnected", function(event){
 });
 
 
-function popuplike() {
+function popuplike() {                          // popup the like fomr after video end 
     $("#like").show();
 }
 
-function timerhide() {
+function timerhide() {                          // hide the timer after the video has finished
 	$("#timer").hide();
 }
 
-function videohide() {
+function videohide() {                          // hide the video after the timer has finished 
 	$("#publisher").hide()
 	$("#subscribers").hide()
 }
+
+
+$( document ).ready(function(){                 // when leave button is clicked, disconnect from server
+  $( '#leave_btn').on('click', function(e){
+    e.preventDefault();
+    disconnect();
+  })
+})
