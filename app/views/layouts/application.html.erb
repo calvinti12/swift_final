@@ -17,6 +17,26 @@
     <body>
 
 
+<!-- Nav-Bar -->
+
+<ul>
+  <div class= "nav_bar_container main_nav">
+    <li><a href="#"><%= image_tag "match.png" , :class => "match_icon"%></a></li>
+    <li><a href="#"><%= image_tag "settings.png" , :class => "settings_icon"%></a></li>
+    <li><a href="#"><%= image_tag "chat.png" , :class => "chat_icon"%></a></li>
+    <li id="log_out_div"><a href="#"><%= image_tag "log_out.png" , :class => "log_out_icon"%></li>
+  </div>
+</ul>
+<!-- Swift Logo -->
+<a class='swift-pic big-swift '>Swift</a>
+
+<!-- Toggle Button -->
+<div class="flip-switch">
+  <input type="checkbox" id="c1">
+  <label for="c1"></label>
+</div>
+
+
       <div id="flash">
         <% flash.each do |key, value| %>
           <div id="flash_<%= key %>"><%=h value %></div>
