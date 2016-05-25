@@ -1,5 +1,5 @@
 .swift-logo{
-border: 0.5px solid black;
+
 width: 100px;
 height: 60px;
 position: absolute;
@@ -10,7 +10,6 @@ left: 12px;
 .nav-bar{
   width: 55px;
   height: 55px;
-  border: 1px solid black;
   position: absolute;
   right: 17px;
   top: 19px;
@@ -28,7 +27,7 @@ left: 12px;
 }
 
 .timer-left{
-  border: 1px solid black;
+
   height: 150px;
   width: 150px;
   position: absolute;
@@ -37,7 +36,7 @@ left: 12px;
 
 }
 .video-small{
-  border: 1px solid black;
+
   height: 100px;
   width: 125px;
   position: absolute;
@@ -46,7 +45,7 @@ left: 12px;
 }
 
 .leave-button{
-  border: 1px solid black;
+
   height: 40px;
   width: 100px;
   position: absolute;
@@ -55,7 +54,7 @@ left: 12px;
 }
 
 .flash-card-profile{
-  border:1px solid black;
+
   height: 318px;
   width: 235px;
   position: absolute;
@@ -133,15 +132,17 @@ left: 12px;
 }
 
 #timer {
-  left: 46%;
+    position: relative;
+    left: 39%;
+    top: -50%;
 }
 #time {
-  font-size: 1.5em;
+  font-size: 2em;
   position: absolute;
-  top: 35%;
-  left: 40%;
-  color: #999999;
-}
+  top: 32%;
+  left: 29%;
+  color: #607D8B;
+  }
 
 .degree {
   /*90 + ( 360 * .1 )*/
@@ -159,4 +160,10 @@ left: 12px;
   top: -10px;
 }
 
+#leave_btn{
+    position: absolute;
+    top: 474px;
+    left: 702px;
 
+
+}
