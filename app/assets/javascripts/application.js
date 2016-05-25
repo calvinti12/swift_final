@@ -91,3 +91,15 @@
   });
 
 })(jQuery);
+
+
+$( document ).ready(function(){                 // go to video feed with random match
+  $( '#video_btn').on('click', function(e){
+    e.preventDefault();
+    $.ajax({
+      url: '/video_call' 
+      type: 'get',
+    })
+  })
+})
+
