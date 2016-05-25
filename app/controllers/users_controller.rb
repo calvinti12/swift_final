@@ -1,20 +1,8 @@
 class UsersController < Clearance::UsersController
-	protect_from_forgery :except => [:update]
 
   def new
   	@user = User.new
   end
-
-  # def create
-
-  # 	@user = User.new(prefer_gender: params[:prefer_gender], prefer_country: params[:prefer_country], prefer_state: params[:prefer_state], prefer_age: params[:prefer_age], description: params[:description])
-
-  #   if @user.save
-  # 		render 'show'
-  # 	else
-  # 		render 'new'
-  # 	end
-  # end
 
   def show
   	@user = User.find(params[:id])
@@ -25,8 +13,8 @@ class UsersController < Clearance::UsersController
   end
 
   def update
-  	byebug
-  	current_user.update(country: params[:country], state: params[:state], gender: params[:gender], prefer_gender: params[:interIn], prefer_age: params[:prefAge])
+	@user = User.find(params[:id])
+	@user.update(permit_params)
 	 if @user.save
 		redirect_to @user
 	 else
@@ -53,13 +41,9 @@ class UsersController < Clearance::UsersController
 		end
 	end
 
-	def params_from_ajax
-	end
-	
-
 	# sanitize the user_params to allow these data field to store in the database
 	def permit_params
-		params.require(:user).permit(:prefer_state, :image, :first_name, :last_name, :age, :description, :country, :state, :gender, :prefer_gender, :prefer_country, :prefer_age, :email, :password)
+		params.require(:user).permit(:prefer_state, :image, :first_name, :last_name, :age, :description, :country, :state, :gender, :prefer_gender, :prefer_country, :prefer_start_age, :prefer_end_age, :email, :password)
 	end
 
 end
