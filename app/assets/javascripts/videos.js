@@ -24,14 +24,17 @@ myCounter = setInterval(function () {
 
   if(count==0){       // trigger events when timer runs out 
     less = 0
-    disconnect()
     popuplike()
     timerhide()
     videohide()
+    leavehide()
+    disconnect()
     }; // find proper fix for this issue. javascript won't stop :(
   // if(count==0) clearInterval(myCounter);
 }, 1000);
 };
+
+
 
 // Initialize an OpenTok Session object
 var session = TB.initSession(sessionId);
@@ -66,16 +69,21 @@ session.on({
 });
 
 // Connect to the Session using the 'apiKey' of the application and a 'token' for permission
+function connectSession() {
 session.connect(apiKey, token);
+}
 
 function disconnect() {
   session.disconnect();
-}
 
-session.on("sessionDisconnected", function(event){
+  session.on("sessionDisconnected", function(event){
   console.log("sessionDisconnected event fired");
   // Session has been disconnected. Include any clean up code here
-});
+  });
+}
+
+
+
 
 
 function popuplike() {                          // popup the like fomr after video end 
@@ -91,6 +99,13 @@ function videohide() {                          // hide the video after the time
 	$("#subscribers").hide()
 }
 
+function leavehide() {                          // hide the video after the timer has finished 
+  $("#leave_btn").hide()
+}
+function videoShow() {
+  $("#publisher").show()
+  $("#subscribers").show()
+}
 
 $( document ).ready(function(){                 // when leave button is clicked, disconnect from server
   $( '#leave_btn').on('click', function(e){

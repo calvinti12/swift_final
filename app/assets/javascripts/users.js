@@ -12,7 +12,6 @@ $(document).ready(function(){
   $( "#ageRange" ).val( $( "#age-range" ).slider( "values", 0 ) + '-' + $( "#age-range" ).slider( "values", 1 ) );
 });
 
-$( document ).ready(function(){
   $( '#submit_edit').on('click', function(e){
     e.preventDefault();
     // var id = //current_user
@@ -38,7 +37,7 @@ $( document ).ready(function(){
     $.ajax({
       url: '/users/' + id, 
       data: data,
-      type: 'PUT',
+      type: 'PATCH',
     })
+    $('#preference_page').hide();
   })
-});

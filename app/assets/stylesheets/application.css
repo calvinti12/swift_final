@@ -356,6 +356,12 @@ background-color: transparent;
 }
 
 #navbar_id{
+}
 
-  
+#preference_page {
+  display: none;
+}
+
+#video_page {
+  display: none;
 }

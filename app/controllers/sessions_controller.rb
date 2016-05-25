@@ -1,5 +1,5 @@
 class SessionsController < Clearance::SessionsController
-
+  protect_from_forgery :except => [:destroy]
   def create_from_omniauth
 
     auth_hash = request.env["omniauth.auth"]
@@ -22,8 +22,7 @@ class SessionsController < Clearance::SessionsController
 
   #sign out
   def destroy
-    session.delete(params[:user_id])
-    redirect_to root_path
+    session.delete(current_user.id)
   end
 
 end
