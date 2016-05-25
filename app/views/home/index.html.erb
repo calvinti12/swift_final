@@ -1,2 +1,41 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<p><%= link_to 'Edit Profile', edit_user_path(current_user.id) %></p>
+
+<p>Home Page</p>
+
+  <div> 
+    <% @user.each do |u| %>
+      <% if (u.prefer_country.downcase == current_user.country.downcase) && (u.country.downcase == current_user.prefer_country.downcase) %>
+
+         <% if (u.prefer_state.downcase == current_user.state.downcase) && (u.state.downcase == current_user.prefer_state.downcase)%>
+         
+           <% if (u.prefer_gender.downcase == current_user.gender.downcase) && (u.gender.downcase == current_user.prefer_gender.downcase)%>
+
+              <% if (u.prefer_age.to_i == current_user.age.to_i) && (u.age.to_i == current_user.prefer_age.to_i)%>
+           
+              <p><%= image_tag(u.image) %></p>
+              <p>First Name: <%= u.first_name %></p>
+              <p>Age: <%= u.age %></p>
+              <p>Country: <%= u.country %></p>
+
+              <p><%= link_to 'Like', video_call_path(u) %>
+            <%end%>
+          <%end%>
+        <%end%>
+      <%end%>
+    <%end%>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

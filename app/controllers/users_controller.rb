@@ -24,7 +24,6 @@ class UsersController < Clearance::UsersController
   end
 
   def update
-  	byebug
 	@user = User.find(params[:id])
 	@user.update(permit_params)
 	 if @user.save
@@ -39,7 +38,7 @@ class UsersController < Clearance::UsersController
 		user_params = params[:user] || Hash.new
 		first_name = user_params.delete(:first_name)
 		last_name = user_params.delete(:last_name)
-		birthday = user_params.delete(:birthday)
+		age = user_params.delete(:age)
 		email = user_params.delete(:email)
 		password = user_params.delete(:password)
 
@@ -47,7 +46,7 @@ class UsersController < Clearance::UsersController
 		Clearance.configuration.user_model.new(user_params).tap do |user|
 			user.first_name = first_name
 			user.last_name = last_name
-			user.birthday = birthday
+			user.age = age
 			user.email = email
 			user.password = password
 		end
@@ -55,7 +54,7 @@ class UsersController < Clearance::UsersController
 
 	# sanitize the user_params to allow these data field to store in the database
 	def permit_params
-		params.require(:user).permit(:first_name, :last_name, :birthday, :description, :country, :state, :gender, :prefer_gender, :prefer_country, :prefer_age, :email, :password)
+		params.require(:user).permit(:prefer_state, :image, :first_name, :last_name, :age, :description, :country, :state, :gender, :prefer_gender, :prefer_country, :prefer_age, :email, :password)
 	end
 
 end
