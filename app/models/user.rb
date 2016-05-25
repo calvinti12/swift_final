@@ -1,18 +1,18 @@
 class User < ActiveRecord::Base
   include Clearance::User
 
-  after_update :first_name, presence: true 
-  after_update :last_name, presence: true
-  after_update :age, presence: true
-  after_update :description, presence: true
-  after_update :country , presence: true
-  after_update :state, presence: true
-  after_update :gender, presence: true
-  after_update :prefer_gender, presence: true
-  after_update :prefer_country , presence: true
-  after_update :prefer_state , presence: true
-  after_update :prefer_start_age , presence: true
-  after_update :prefer_end_age , presence: true
+  validates :first_name, presence: true 
+  validates :last_name, presence: true
+  validates :age, presence: true
+  validates :description, presence: true
+  validates :country , presence: true
+  validates :state, presence: true
+  validates :gender, presence: true
+  validates :prefer_gender, presence: true
+  validates :prefer_country , presence: true
+  validates :prefer_state , presence: true
+  validates :prefer_start_age , presence: true
+  validates :prefer_end_age , presence: true
 
 
     has_many :authentications, :dependent => :destroy
@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
 
   def self.create_with_auth_and_hash(authentication,auth_hash)
 
-    create! do |u|
+    u = User.new
       u.first_name = auth_hash['extra']["raw_info"]["first_name"]
       u.last_name = auth_hash['extra']['raw_info']['last_name']
       u.gender = auth_hash['extra']["raw_info"]["gender"]
@@ -38,7 +38,8 @@ class User < ActiveRecord::Base
       u.encrypted_password = SecureRandom.urlsafe_base64
       u.remember_token = SecureRandom.urlsafe_base64
       u.authentications<<(authentication) 
-    end
+      u.save(validate: false)
+      u
   end
 
   def fb_token

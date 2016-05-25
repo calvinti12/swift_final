@@ -354,6 +354,7 @@ background-color: transparent;
 
 }
 
+
 #token_left{
   position: relative;
       top: -114px;
@@ -362,5 +363,15 @@ background-color: transparent;
       padding: 9px;
       width: 39px;
       height: 39px;
+
+
+
+
+#preference_page {
+  display: none;
+}
+
+#video_page {
+  display: none;
 
 }

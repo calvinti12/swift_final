@@ -132,9 +132,11 @@ left: 12px;
 }
 
 #timer {
-    position: relative;
+    position: absolute; /* fix this please, should be relative */
     left: 39%;
-  top: -45%;
+
+    top: 52%;
+
 }
 #time {
   font-size: 2em;
