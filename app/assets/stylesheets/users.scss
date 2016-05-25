@@ -3,6 +3,17 @@
 @import "compass/css3";
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
 
+
+textarea::-webkit-input-placeholder {
+color: white !important;
+}
+
+input::-webkit-input-placeholder {
+color: white !important;
+}
+
+
+
 *{
   @include box-sizing(border-box);
 }
@@ -92,8 +103,8 @@ h1{
   text-align: center;
   .fa-camera-retro{
     position: relative;
-  top: 100px;
-  right: -100px;
+    top: 100px;
+    right: -168px;
     $size: 100px;
     width: $size;
     height: $size;
@@ -113,8 +124,8 @@ h1{
   border: none;
     width: 200px;
     position: relative;
-  right: -525px;
-  bottom: 18px;
+    right: 73px;
+    bottom: -120px;
     display: block;
     padding: 15px;
     background-color: #fff;
@@ -226,7 +237,7 @@ h1{
 
 // Preference - Gender//
 
-#gender_text {
+#f-gender-text {
     font-size: 31px;
     margin-top: 66px;
     position: relative;
@@ -273,10 +284,10 @@ margin-left: -50px;
 // Preference - Age//
 // // slider
 .slider-box {
-    width: 24%;
-    position: relative;
-    left: 613px;
-    top: -131px;
+  width: 24%;
+  position: relative;
+  left: 653px;
+  top: -896px;
 }
 
 label,
@@ -305,9 +316,10 @@ input {
 
 
 #Age_text{
+  width : 0px;
   position: relative;
-  left: 742px;
-  top: -140px;
+  left: 777px;
+  top: -915px;
   font-size: 21px;
 
 }
