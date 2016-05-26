@@ -164,6 +164,7 @@ GEM
       addressable (~> 2.3)
       httparty (~> 0.13.1)
     pg (0.18.4)
+    puma (3.4.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -258,6 +259,7 @@ DEPENDENCIES
   omniauth-facebook
   opentok
   pg (~> 0.15)
+  puma
   rails (= 4.2.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
