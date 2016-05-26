@@ -78,8 +78,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: swift_production
-  username: swift
-  password: <%= ENV['SWIFT_DATABASE_PASSWORD'] %>
+# production:
+#   <<: *default
+#   database: swift_production
+#   username: swift
+#   password: <%= ENV['SWIFT_DATABASE_PASSWORD'] %>
