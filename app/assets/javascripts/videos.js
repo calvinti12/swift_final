@@ -39,6 +39,7 @@ myCounter = setInterval(function () {
 // Initialize an OpenTok Session object
 var session = TB.initSession(sessionId);
 
+function createSession() {
 // Initialize a Publisher, and place it into the element with id="publisher"
 var publisher = TB.initPublisher(apiKey, 'publisher', {width: 120, height: 90});
 
@@ -67,9 +68,9 @@ session.on({
 
 
 });
-
-// Connect to the Session using the 'apiKey' of the application and a 'token' for permission
-function connectSession() {
+// }
+// // Connect to the Session using the 'apiKey' of the application and a 'token' for permission
+// function connectSession() {
 session.connect(apiKey, token);
 }
 
@@ -110,6 +111,7 @@ function videoShow() {
 $( document ).ready(function(){                 // when leave button is clicked, disconnect from server
   $( '#leave_btn').on('click', function(e){
     e.preventDefault();
+    $('#video_page').hide();
     disconnect();
   })
 })
