@@ -107,7 +107,7 @@ left: 12px;
   100% {opacity:1;transform:scale(1);}
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 .pie {
   width: 90px;
   height: 90px;
