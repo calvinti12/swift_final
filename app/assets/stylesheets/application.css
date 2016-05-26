@@ -95,7 +95,7 @@ li a:hover {
 .nav_bar_container{
   position:relative;
   top: 135px;
-
+  z-index: 3;
 }
 
 
@@ -364,6 +364,7 @@ background-color: transparent;
 
 #preference_page {
   display: none;
+  z-index: -1;
 }
 
 #video_page {
