@@ -363,9 +363,7 @@ background-color: transparent;
       padding: 9px;
       width: 39px;
       height: 39px;
-
-
-
+}
 
 #preference_page {
   display: none;
@@ -373,5 +371,4 @@ background-color: transparent;
 
 #video_page {
   display: none;
-
 }
