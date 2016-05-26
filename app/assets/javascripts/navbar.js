@@ -13,8 +13,8 @@ $( document ).ready(function(){                 // when leave button is clicked,
   	$.ajax({
   		url: '/video_call' 
   	})
-    connectSession()
-  	$('#video_page').show();	
+    createSession()
+  	$('#video_page').show()
   })
 })
 
