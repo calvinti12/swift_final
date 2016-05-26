@@ -78,7 +78,7 @@ a.big-swift {
 	color: #00E6AD;
 }
 
-/*.button
+.button
     %h1 Fizzy CSS Button
     %h2 With super fizzy particle action
     %a{:href => 'http://www.codepen.io/jcoulterdesign'}
@@ -95,7 +95,7 @@ a.big-swift {
                 -(1..52).each do
                     .button_spots
 
-  /*Log In Button*/
+  /*Log In Button
 
   button {
     outline:none;
