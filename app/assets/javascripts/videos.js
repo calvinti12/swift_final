@@ -111,6 +111,7 @@ function videoShow() {
 $( document ).ready(function(){                 // when leave button is clicked, disconnect from server
   $( '#leave_btn').on('click', function(e){
     e.preventDefault();
+    flashshow();
     $('#video_page').hide();
     disconnect();
   })

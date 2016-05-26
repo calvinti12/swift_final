@@ -1,23 +1,24 @@
 class User < ActiveRecord::Base
   include Clearance::User
 
-  validates :first_name, presence: true 
-  validates :last_name, presence: true
-  validates :age, presence: true
-  validates :description, presence: true
-  validates :country , presence: true
-  validates :state, presence: true
-  validates :gender, presence: true
-  validates :prefer_gender, presence: true
-  validates :prefer_country , presence: true
-  validates :prefer_state , presence: true
-  validates :prefer_start_age , presence: true
-  validates :prefer_end_age , presence: true
+  # validates :first_name, presence: true 
+  # validates :last_name, presence: true
+  # validates :age, presence: true
+  # validates :description, presence: true
+  # validates :country , presence: true
+  # validates :state, presence: true
+  # validates :gender, presence: true
+  # validates :prefer_gender, presence: true
+  # validates :prefer_country , presence: true
+  # validates :prefer_state , presence: true
+  # validates :prefer_start_age , presence: true
+  # validates :prefer_end_age , presence: true
 
 
     has_many :authentications, :dependent => :destroy
     mount_uploader :image , ImageUploader
-
+    has_many :rooms, :dependent => :destroy
+    
   def self.create_with_auth_and_hash(authentication,auth_hash)
 
     u = User.new

@@ -2,6 +2,16 @@ class VideosController < ApplicationController
 
 require 'opentok'
 
+def create
+	if Room.last.user2.empty? && Room.last.user1 != empty?
+		Room.last.user2 = current_user.id
+		Room.last.save
+		current_user.room_id = Room.last.id
+		current_user.save
+	else 
+		@room = Room.create(user1: current_user.id)
+	end
+end
 
 def show
 	@api_key = "45592332"

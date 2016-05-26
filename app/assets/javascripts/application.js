@@ -105,3 +105,10 @@ $( document ).ready(function(){                 // go to video feed with random 
   }) 
 })
 
+function flashshow() {                          // hide the video after the timer has finished 
+  $("#flashcards").show()
+}
+
+function flashhide() {                          // hide the video after the timer has finished 
+  $("#flashcards").hide()
+}

@@ -2,6 +2,7 @@ $( document ).ready(function(){                 // when leave button is clicked,
   $( '#preference_btn').on('click', function(e){
   	e.preventDefault()
   	$('#video_page').hide();
+    flashhide()
   	$('#preference_page').show();	
   })
 })
@@ -10,7 +11,9 @@ $( document ).ready(function(){                 // when leave button is clicked,
   $( '#video_btn').on('click', function(e){
   	e.preventDefault()
   	$('#preference_page').hide();
+    flashhide()
   	$.ajax({
+      method: 'POST',
   		url: '/video_call' 
   	})
     createSession()
@@ -26,5 +29,12 @@ $( document ).ready(function(){
       url: '/sign_out'
     })
     window.location="/"
+  })
+})
+
+$( document ).ready(function(){
+  $( '#match_btn' ).on('click', function(e){
+    e.preventDefault()
+    flashshow()
   })
 })
