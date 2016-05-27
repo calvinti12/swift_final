@@ -1,0 +1,169 @@
+/*Payment plan*/
+
+sup{
+
+    font-size: 40px;
+}
+
+ul.payment{
+    list-style: none;
+    font-size: 15px;
+    font-family:'Open Sans';
+    color: #9095aa;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+ul.payment li{
+border-bottom: 1px solid #494a5a;
+padding: 0px;
+margin: 0px;
+text-align: center;
+height: 52px;
+line-height: 52px;
+}
+
+
+#container{
+    width: 100%;
+  text-align:center;
+}
+
+.whole{
+    display: inline-block;
+}
+
+
+.type{
+    width: 300px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #eac80d;
+    height: 62px;
+    border-bottom: 3px solid #bfa30c;
+
+}
+
+.type p{
+    font-family:'Open Sans';
+    font-weight: 800;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding-top: 19px;
+
+
+}
+
+.plan{
+    padding-top: 35px;
+    width: 300px;
+    background-color: #2b2937;
+
+    border-radius: 0px 0px 5px 5px;
+    font-family:'Open Sans';
+    font-style:condensed;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+
+}
+.standard{
+    background-color: #F48FB1;
+    border-bottom: 3px solid #EC407A;
+}
+
+.ultimate{
+    background-color: #5d6a9a;
+    border-bottom: 3px solid #474f6f;
+}
+
+
+.header span{
+    font-size: 32px;
+}
+
+.month{
+    font-size: 14px;
+    color: #575757;
+    padding: 0px;
+    margin: -10px;
+}
+
+.price{
+    height:80px;
+}
+
+
+.content{
+    position: relative;
+    height: 157px;
+
+}
+
+#premium_plan {
+    height: 156px;
+    width: 300px;
+    background-color: transparent;
+}
+
+.button_premium_plan {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 9px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1_premium_plan {
+    background-color: #FF5252;
+border: 2px solid #FF5252;
+position: relative;
+bottom: -30px;
+width: 210px;
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+#free_plan{
+    height: 156px;
+    width: 300px;
+    background-color: transparent;
+}
+
+#current_planz{
+color:#9E9E9E;
+}
+
+
+#payment_plan_page{
+    width: 605px;
+    position: relative;
+        width: 79%;
+}
+
+.content_free{
+    height: 157px;
+
+}
+
+#free_plan_btn{
+    border-bottom: none;
+        position: relative;
+top: 29px;
+}
+
+#whole_premium{
+    position: relative;
+    left: 350px;
+    bottom: 353px;
+
+}
