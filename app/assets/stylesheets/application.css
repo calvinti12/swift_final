@@ -140,4 +140,7 @@ background-color: transparent;
 
 #payment_plan_page {
   display: none;
+  top: 234px;
+  position: absolute;
 }
+
