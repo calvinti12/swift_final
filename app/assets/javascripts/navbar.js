@@ -12,6 +12,7 @@ $( document ).ready(function(){                 // when leave button is clicked,
   	e.preventDefault()
   	$('#preference_page').hide();
     flashhide()
+    debugger
   	$.ajax({
       method: 'POST',
   		url: '/video_call' 

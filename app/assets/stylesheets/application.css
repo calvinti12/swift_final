@@ -21,6 +21,10 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
+body {
+  position: relative;
+  z-index: -99;
+}
 
 /*Nav Bar*/
 .main_nav_bar{

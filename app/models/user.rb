@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
     has_many :authentications, :dependent => :destroy
     mount_uploader :image , ImageUploader
     has_many :rooms, :dependent => :destroy
-    
+    has_many :matches
   def self.create_with_auth_and_hash(authentication,auth_hash)
 
     u = User.new

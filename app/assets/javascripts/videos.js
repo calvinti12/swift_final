@@ -116,3 +116,23 @@ $( document ).ready(function(){                 // when leave button is clicked,
     disconnect();
   })
 })
+
+$( document ).ready(function(){
+  $ ( '#match-yes-btn' ).on('click', function(e){
+    e.preventDefault();
+    $.ajax({
+      method: 'POST',
+      url: '/match'
+    })
+  })
+});
+
+$( document ).ready(function(){
+  $ ( '#match-no-btn' ).on('click', function(e){
+    e.preventDefault();
+    flashshow();
+    $('#video_page').hide();
+    disconnect();
+  })
+});
+

@@ -1,11 +1,12 @@
 class VideosController < ApplicationController
-
+protect_from_forgery :except => [:create]
 require 'opentok'
 
 def create
-	if Room.last.user2.empty? && Room.last.user1 != empty?
-		Room.last.user2 = current_user.id
-		Room.last.save
+	if Room.last.user2.blank? && Room.last.user1 != blank?
+		@room = Room.last
+		@room.update(user2: current_user.id)
+		@room.save
 		current_user.room_id = Room.last.id
 		current_user.save
 	else 

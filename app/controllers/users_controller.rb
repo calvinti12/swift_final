@@ -10,7 +10,6 @@ class UsersController < Clearance::UsersController
 
   def edit
   	@user = User.find(params[:id])
-  	render :partial => "directory_name/dynamic"
   end
 
   def update
