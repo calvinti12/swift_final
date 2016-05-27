@@ -1,10 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
 .swift-logo{
-​
-width: 100px;
-height: 60px;
-position: absolute;
-left: 12px;
-    top: 31px;
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  left: 12px;
+  top: 31px;
 }
 ​
 .nav-bar{
@@ -13,7 +14,6 @@ left: 12px;
   position: absolute;
   right: 17px;
   top: 19px;
-​
 }
 ​
 .video-large{
@@ -27,16 +27,14 @@ left: 12px;
 }
 ​
 .timer-left{
-​
   height: 150px;
   width: 150px;
   position: absolute;
   top: 250px;
   right: 336px;
-​
 }
+
 .video-small{
-​
   height: 100px;
   width: 125px;
   position: absolute;
@@ -45,7 +43,6 @@ left: 12px;
 }
 ​
 .leave-button{
-​
   height: 40px;
   width: 100px;
   position: absolute;
@@ -54,7 +51,6 @@ left: 12px;
 }
 ​
 .flash-card-profile{
-​
   height: 318px;
   width: 235px;
   position: absolute;
@@ -102,12 +98,11 @@ left: 12px;
 .ld-g {opacity:0;animation: ld-in 3s 0.6s ease infinite;}
 ​
 @keyframes ld-in {
-  0% {opacity:0;transform:scale(0);}
-  30% {opacity:1;transform:scale(1);}
-  100% {opacity:1;transform:scale(1);}
+  0% {opacity:0; transform:scale(0);}
+  30% {opacity:1; transform:scale(1);}
+  100% {opacity:1; transform:scale(1);}
 }
-​
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
 .pie {
   width: 90px;
   height: 90px;
@@ -134,17 +129,16 @@ left: 12px;
 #timer {
     position: absolute; /* fix this please, should be relative */
     left: 39%;
-​
     top: 52%;
-​
 }
+
 #time {
   font-size: 2em;
   position: absolute;
   top: 32%;
   left: 29%;
   color: #607D8B;
-  }
+}
 ​
 .degree {
   /*90 + ( 360 * .1 )*/
@@ -166,8 +160,6 @@ left: 12px;
     position: absolute;
     top: 474px;
     left: 702px;
-​
-​
 }
 
 
