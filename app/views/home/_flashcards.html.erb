@@ -1,0 +1,26 @@
+ <center>
+   <div class="p-dash" id="flashcards">
+    <% @users.each do |user| %>
+      <% if user.id == current_user.id %>
+      <% else %>
+      <figure class="snip1218">
+      <div class="image">
+        <% if user.image.model[:image].nil? %>
+          <%=image_tag("match.png")%>
+        <%else%>
+          <%=image_tag(@user.image.model[:image])%>
+        <%end%>
+        <p>
+          <%=user.description%>
+        </p>
+      </div>
+      <figcaption>
+        <h3><%=user.first_name%> <span><%=user.last_name %></span></h3>
+        <h4><span>Country: <%=user.country%></span></h4><br>
+        <div class="icons"><a href="#"><i class="fa fa-video-camera"></i></a></div>
+      </figcaption>
+    </figure>
+    <% end %>
+    <% end %>
+  </div> 
+</center>

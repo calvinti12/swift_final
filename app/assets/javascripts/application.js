@@ -93,15 +93,22 @@
 })(jQuery);
 
 
-$( document ).ready(function(){                 // go to video feed with random match
-  $( '#video_btn').on('click', function(e){
-    e.preventDefault();
-    $.ajax({
-      url: '/video_call',
-      type: 'get',                              // loads the variables from the controller
-    })
-    connectSession()                            // connect the session
-    videoShow()                                 // show the video screen 
-  }) 
-})
+// $( document ).ready(function(){                 // go to video feed with random match
+//   $( '#video_btn').on('click', function(e){
+//     e.preventDefault();
+//     $.ajax({
+//       url: '/video_call',
+//       type: 'get',                              // loads the variables from the controller
+//     })
+//     connectSession()                            // connect the session
+//     videoShow()                                 // show the video screen 
+//   }) 
+// })
 
+function flashshow() {                          // hide the video after the timer has finished 
+  $("#flashcards").show()
+}
+
+function flashhide() {                          // hide the video after the timer has finished 
+  $("#flashcards").hide()
+}

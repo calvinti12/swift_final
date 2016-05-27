@@ -14,11 +14,17 @@
  *= require_self
  *= require chosen
  *= require videos
+ *= require flashcards
+ *= require_tree 
  */
 
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
+body {
+  position: relative;
+  z-index: -99;
+}
 
 /*Nav Bar*/
 .main_nav_bar{
@@ -109,8 +115,8 @@ li a:hover {
 a.swift-pic{
   position: relative;
   color: white;
-  right: -1123px;
-  top: -688px;
+  right: -1093px;
+  top: 31px;
 }
 
 #landing_bar{
@@ -242,11 +248,11 @@ background-color: transparent;
       }
 
       &:before {
-        content: 'OFF';
+        content: '';
       }
 
       &:after {
-        content: 'ON';
+        content: '';
       }
 
     }

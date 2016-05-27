@@ -41,5 +41,6 @@ debugger
     type: 'PATCH',
   })
   $('#preference_page').hide();
+  flashshow();
 })
 });
