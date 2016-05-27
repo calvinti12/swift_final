@@ -11,11 +11,7 @@
  * file per style scope.
  *  
  *= require_self
- *= require chosen
- *= require videos
- *= require flashcards
- *= require home
- *= require landing_page
+ *= require_tree .
  */
 
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
