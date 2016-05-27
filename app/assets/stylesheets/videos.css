@@ -169,3 +169,35 @@ left: 12px;
 ​
 ​
 }
+
+
+/*Pop Up Match*/
+
+.container_match {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #CCCCCC;
+  display: none;
+}
+
+
+#match-yes-btn {
+  padding: 15px 40px;
+  background: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+#match-no-btn {
+  margin-right : 10px;
+  padding: 15px 40px;
+  background: #FF8A80;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
