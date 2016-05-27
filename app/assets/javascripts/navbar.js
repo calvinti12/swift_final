@@ -2,6 +2,7 @@ $( document ).ready(function(){                 // when leave button is clicked,
   $( '#preference_btn').on('click', function(e){
   	e.preventDefault()
   	$('#video_page').hide();
+    $( '#payment_plan_page' ).hide();
     flashhide()
   	$('#preference_page').show();	
   })
@@ -11,6 +12,7 @@ $( document ).ready(function(){                 // when leave button is clicked,
   $( '#video_btn').on('click', function(e){
   	e.preventDefault()
   	$('#preference_page').hide();
+    $( '#payment_plan_page' ).hide();
     flashhide()
     debugger
   	$.ajax({
@@ -36,6 +38,8 @@ $( document ).ready(function(){
 $( document ).ready(function(){
   $( '#match_btn' ).on('click', function(e){
     e.preventDefault()
+    $('#preference_page').hide();
+    $( '#payment_plan_page' ).hide();
     flashshow()
   })
 })
@@ -44,6 +48,7 @@ $( document ).ready(function(){
   $( '#Go_Premium' ).on('click', function(e){
     e.preventDefault()
     $( '#payment_plan_page' ).show();
+    flashhide();
   })
 })
 
