@@ -1,14 +1,14 @@
-
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 .landing_body {
-	background: white !important;
-	color: #FFF;
+  background: white !important;
+  color: #FFF;
 
 }
+
 #main {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url("landing_img.jpg");
+  background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url(http://www.greatdatedeals.com/wp-content/uploads/2016/03/video-chat.jpg);
   background-size: cover, cover;
   background-position: center, center;
   height: 100vh;
@@ -16,66 +16,85 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
 h1 {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 2rem;
-	display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  display: inline-block;
   padding-top: 5px;
   padding-bottom: 21px;
-	font-weight: 400;
-	position: relative;
-	opacity: 1;
-	transform: scale(1);
-	transition: transform 0.5s ease, opacity 1s ease;
+  font-weight: 400;
+  position: relative;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.5s ease, opacity 1s ease;
       top: -114px;
 }
 
 #main_slogan{
-	position: relative;
+  position: relative;
 top: -50px;
 left: 152px;
 line-height: 2.5;
 }
 
 .is-loading h1 {
-	transform: scale(0.9);
-	opacity: 0;
+  transform: scale(0.9);
+  opacity: 0;
 }
 
 h1:before,
 h1:after {
-	height: 2px;
-	width: 100%;
-	content: "";
-	background: white;
-	display: block;
-	position: relative;;
-	transition: width 0.4s ease;
-	transition-delay: 0.8s;
+  height: 2px;
+  width: 100%;
+  content: "";
+  background: white;
+  display: block;
+  position: relative;;
+  transition: width 0.4s ease;
+  transition-delay: 0.8s;
 }
 
 h1:before {
-	top: 0;
-	left: 0;
+  top: 0;
+  left: 0;
 }
 
 h1:after {
-	bottom: 0;
-	right: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .is-loading h1:before,
 .is-loading h1:after {
-	width: 0;
+  width: 0;
 }
 
 a.big-swift {
-	font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', cursive;
   font-size: 50px;
-	color: #00E6AD;
+  color: #00E6AD;
 }
 
+.button
+    %h1 Fizzy CSS Button
+    %h2 With super fizzy particle action
+    %a{:href => 'http://www.codepen.io/jcoulterdesign'}
+        %i.ion-social-codepen
+        %span More Codepen shenanigans
+    %input#button{:type => 'checkbox'}
+    %label{:for => 'button'}
+        .button_inner.q
+            %i.l.ion-log-in
+            %span.t Downloads
+            %span
+                %i.tick.ion-checkmark-round
+            .b_l_quad
+                -(1..52).each do
+                    .button_spots
+
+  /*Log In Button*/
 
   button {
     outline:none;
@@ -172,7 +191,7 @@ a.big-swift {
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
-			background: transparent;
+      background: transparent;
   }
 
   /* Button 4 */
@@ -653,11 +672,11 @@ a.btn_red {
 .popupHeader {
         font-size: 16px;
         text-transform: uppercase;
-				font-size: 16px;
-	    	text-transform: uppercase;
-	    	color: black;
-	    	font-family: 'Josefin Sans', sans-serif;
-	}
+        font-size: 16px;
+        text-transform: uppercase;
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+  }
 
 
 .popupHeader {
@@ -681,7 +700,7 @@ a.btn_red {
 }
 
 .popupBody {
-				font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
         padding: 20px;
 }
 /* Social Login Form */
@@ -711,12 +730,12 @@ a.btn_red {
 
 .social_login .fb .icon {
         background: #3B5998;
-				    padding: 7px 18px;
+            padding: 7px 18px;
 }
 
 .social_login .google .icon {
         background: #DD4B39;
-				  padding: 7px 18px;
+          padding: 7px 18px;
 }
 
 .social_login .icon_title {
@@ -726,9 +745,9 @@ a.btn_red {
         font-weight: bold;
         font-size: 16px;
         color: #777;
-				position: relative;
-				top: 4px;
-				left: 30px;
+        position: relative;
+        top: 4px;
+        left: 30px;
 }
 
 .social_login .social_box:hover {
@@ -837,21 +856,21 @@ a.btn_red {
 }
 .fa-google-plus{
 
-	margin-left: -5px;
+  margin-left: -5px;
 }
 
 .header_title{
-		position: relative;
-	    top: 2px;
-	    left: 111px;
-	    font-size: 18px;
+    position: relative;
+      top: 2px;
+      left: 111px;
+      font-size: 18px;
 
 }
 
 .sign_up_button{
-	position: relative;
-	left: -260px;
-	top: 84px;
+  position: relative;
+  left: -260px;
+  top: 84px;
 
 }
 
