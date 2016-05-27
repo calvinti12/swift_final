@@ -13,7 +13,7 @@
  *= require_self
  *= require chosen
  *= require videos
- *= require videos.css
+ *= require_tree .
  */
 
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
