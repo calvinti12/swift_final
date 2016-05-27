@@ -39,3 +39,11 @@ $( document ).ready(function(){
     flashshow()
   })
 })
+
+$( document ).ready(function(){
+  $( '#Go_Premium' ).on('click', function(e){
+    e.preventDefault()
+    $( '#payment_plan_page' ).show();
+  })
+})
+

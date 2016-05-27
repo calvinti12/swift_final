@@ -1,22 +1,22 @@
  <center>
    <div class="p-dash" id="flashcards">
-    <% @matches.each do |user| %>
-      <% if user.id == current_user.id %>
+    <% @matches.each do |match| %>
+      <% if match.user_id == current_user.id %>
       <% else %>
       <figure class="snip1218">
       <div class="image">
-        <% if user.image.model[:image].nil? %>
+        <% if match.user.image.model[:image].nil? %>
           <%=image_tag("match.png")%>
         <%else%>
           <%=image_tag(@user.image.model[:image])%>
         <%end%>
         <p>
-          <%=user.description%>
+          <%=match.user.description%>
         </p>
       </div>
       <figcaption>
-        <h3><%=user.first_name%> <span><%=user.last_name %></span></h3>
-        <h4><span>Country: <%=user.country%></span></h4><br>
+        <h3><%=match.user.first_name%> <span><%=match.user.last_name %></span></h3>
+        <h4><span>Country: <%=match.user.country%></span></h4><br>
         <div class="icons"><a href="#"><i class="fa fa-video-camera"></i></a></div>
       </figcaption>
     </figure>
