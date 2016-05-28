@@ -1,15 +1,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
-​
-#swift-logo{
-  width: 100px;
-  height: 60px;
-  position: absolute;
-  right: 78px;
-  top: 22px;
-  color: white;
-}
+
 
 .nav-bar{
   width: 55px;
@@ -194,6 +186,7 @@
   border-radius: 4px;
   color: white;
 }
+
 
 #like_page {
   display: none;
