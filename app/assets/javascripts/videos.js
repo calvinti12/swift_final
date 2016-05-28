@@ -108,10 +108,15 @@ function videoShow() {
 }
 
 $( document ).ready(function(){                 // when leave button is clicked, disconnect from server
-  $( '#leave_btn').on('click', function(e){
+  $('body').on('click', '#leave_btn' , function(e){
     e.preventDefault();
     flashshow();
     $('#video_page').hide();
+    $('.video_page_container').hide();
+    $.ajax({
+      method: 'POST',
+      url: '/render_video'
+    })
     disconnect();
   })
 })
