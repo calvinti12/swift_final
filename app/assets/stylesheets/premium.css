@@ -2,7 +2,6 @@
 /*/*Payment plan*/
 
 sup{
-
     font-size: 40px;
 }
 
@@ -13,7 +12,6 @@ ul.payment{
     color: #9095aa;
     padding: 0px;
     margin: 0px;
-
 }
 
 ul.payment li{
@@ -53,15 +51,12 @@ line-height: 52px;
     color: white;
     text-align: center;
     padding-top: 19px;
-
-
 }
 
 .plan{
     padding-top: 35px;
     width: 300px;
     background-color: #2b2937;
-
     border-radius: 0px 0px 5px 5px;
     font-family:'Open Sans';
     font-style:condensed;
@@ -70,6 +65,7 @@ line-height: 52px;
     text-align: center;
 
 }
+
 .standard{
     background-color: #F48FB1;
     border-bottom: 3px solid #EC407A;
@@ -148,7 +144,7 @@ color:#9E9E9E;
 #payment_plan_page{
     width: 605px;
     position: relative;
-        width: 79%;
+    width: 79%;
 }
 
 .content_free{
@@ -158,13 +154,12 @@ color:#9E9E9E;
 
 #free_plan_btn{
     border-bottom: none;
-        position: relative;
-top: 29px;
+    position: relative;
+    top: 29px;
 }
 
 #whole_premium{
     position: relative;
     left: 350px;
     bottom: 353px;
-
 }
