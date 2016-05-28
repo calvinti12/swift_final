@@ -1,5 +1,7 @@
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
+​
 #swift-logo{
   width: 100px;
   height: 60px;
@@ -8,7 +10,7 @@
   top: 22px;
   color: white;
 }
-​
+
 .nav-bar{
   width: 55px;
   height: 55px;
@@ -24,10 +26,11 @@
   position: absolute;
   right: 450px;
   top: 130px;
-  z-index: -4
+  z-index: -4;
 }
 
 .timer-left{
+
   height: 150px;
   width: 150px;
   position: absolute;
@@ -50,6 +53,7 @@
   top: 625px;
   left: 445px;
 }
+
 
 .flash-card-profile {
   height: 318px;

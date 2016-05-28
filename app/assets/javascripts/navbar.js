@@ -39,6 +39,7 @@ $( document ).ready(function(){
     e.preventDefault()
     $('#preference_page').hide();
     $( '#payment_plan_page' ).hide();
+    $( '#video_page').hide();
     flashshow()
   })
 })
@@ -47,6 +48,8 @@ $( document ).ready(function(){
   $( '#Go_Premium' ).on('click', function(e){
     e.preventDefault()
     $( '#payment_plan_page' ).show();
+    $('#preference_page').hide();
+    $( '#video_page').hide();
     flashhide();
   })
 })
