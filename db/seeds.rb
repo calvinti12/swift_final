@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-user1 = User.create(first_name: 'Anatah', last_name: 'Sam', age: 20, country: 'Malaysia', state: 'Selangor', gender: 'female', prefer_gender: 'male', prefer_country: 'Malaysia', prefer_state: 'Selangor', prefer_start_age: 20, prefer_end_age: 20, email: 'onetwo@gmail.com', description: "Female" ,encrypted_password: SecureRandom.urlsafe_base64, remember_token: SecureRandom.urlsafe_base64, image: File.new("#{asset-url("card_angmo1.png")}")
+user1 = User.create(first_name: 'Anatah', last_name: 'Sam', age: 20, country: 'Malaysia', state: 'Selangor', gender: 'female', prefer_gender: 'male', prefer_country: 'Malaysia', prefer_state: 'Selangor', prefer_start_age: 20, prefer_end_age: 20, email: 'onetwo@gmail.com', description: "Female" ,encrypted_password: SecureRandom.urlsafe_base64, remember_token: SecureRandom.urlsafe_base64, image: File.new("#{asset-url("card_angmo1.png")}"))
 
 User.create( first_name: 'Masalah', last_name: 'Bank', age: 24, country: 'Malaysia', state: 'Selangor', gender: 'female', prefer_gender: 'male', prefer_country: 'Australia', prefer_state: 'Perth', prefer_start_age: 18, prefer_end_age: 22, email: 'onetwso@gmail.com', description: "Female" ,encrypted_password: SecureRandom.urlsafe_base64, remember_token: SecureRandom.urlsafe_base64, image: File.new(File.join("#{Rails.root}/app/assets/images/card_france2.png")))
 
