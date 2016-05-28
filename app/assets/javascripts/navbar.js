@@ -20,6 +20,7 @@ $( document ).ready(function(){                 // when leave button is clicked,
   	})
     createSession()
   	$('#video_page').show()
+    $('.video_page_container').show();
   })
 })
 

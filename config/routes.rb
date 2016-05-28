@@ -30,8 +30,8 @@ Rails.application.routes.draw do
 
   post "/video_call" => "videos#create"
   put "/sign_out" => "sessions#destroy"
-
   post "/match" => "matches#create"
+  post "/render_video" => "home#render_video"
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
