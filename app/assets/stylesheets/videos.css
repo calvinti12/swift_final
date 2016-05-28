@@ -30,7 +30,6 @@
 }
 
 .timer-left{
-
   height: 150px;
   width: 150px;
   position: absolute;
@@ -54,8 +53,7 @@
   left: 445px;
 }
 
-.flash-card-profile{
-  height: 318px;
+.flash-card-profile {
   width: 235px;
   position: absolute;
   right: 170px;
@@ -166,7 +164,6 @@
     top: 474px;
     left: 702px;
 }
-
 
 /*Pop Up Match*/
 
