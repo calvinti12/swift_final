@@ -8,8 +8,7 @@
   top: 22px;
   color: white;
 }
-
-
+​
 .nav-bar{
   width: 55px;
   height: 55px;
@@ -52,7 +51,11 @@
   left: 445px;
 }
 
+<<<<<<< HEAD
 .flash-card-profile {
+=======
+.flash-card-profile{
+>>>>>>> master
   height: 318px;
   width: 235px;
   position: absolute;
@@ -142,7 +145,11 @@
   left: 29%;
   color: #607D8B;
 }
+<<<<<<< HEAD
 ​
+=======
+
+>>>>>>> master
 .degree {
   /*90 + ( 360 * .1 )*/
   background-image: linear-gradient(90deg, transparent 50%, white 50%), linear-gradient(90deg, white 50%, transparent 50%);
