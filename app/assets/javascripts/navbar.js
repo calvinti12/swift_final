@@ -14,7 +14,6 @@ $( document ).ready(function(){                 // when leave button is clicked,
   	$('#preference_page').hide();
     $( '#payment_plan_page' ).hide();
     flashhide()
-    debugger
   	$.ajax({
       method: 'POST',
   		url: '/video_call' 
