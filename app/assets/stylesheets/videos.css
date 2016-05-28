@@ -30,7 +30,6 @@
 }
 
 .timer-left{
-
   height: 150px;
   width: 150px;
   position: absolute;
@@ -54,7 +53,7 @@
   left: 445px;
 }
 
-.flash-card-profile{
+.flash-card-profile {
   height: 318px;
   width: 235px;
   position: absolute;
