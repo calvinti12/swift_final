@@ -122,10 +122,10 @@
 }
 
 #timer {
-    position: absolute; /* fix this please, should be relative */
+    position: relative;
     left: 39%;
     top: 52%;
-    top: 52%;
+    top: 346px;
 }
 
 #time {

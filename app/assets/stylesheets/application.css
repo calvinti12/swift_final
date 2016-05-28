@@ -21,6 +21,8 @@
 
 
 /*Nav Bar*/
+
+
 .main_nav_bar{
     position: fixed;
 }
@@ -28,10 +30,11 @@
 ul {
 
     list-style-type: none;
+    height: 850px;
     margin: 0;
     padding: 0;
     width: 95px;
-    height: 700px;
+    height: 1000px;
     background-color:rgba(241, 241, 241, 0.72);
 
 }
@@ -91,10 +94,16 @@ li a:hover {
   right: -6px;
 }
 
+#logout_btn{
+  position: relative;
+  top: 300px;
+
+}
+
 
 .nav_bar_container{
   position:relative;
-  top: 135px;
+  top: 40px;
   z-index: 3;
 }
 
