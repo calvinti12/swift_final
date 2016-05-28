@@ -54,7 +54,6 @@
 }
 
 .flash-card-profile {
-  height: 318px;
   width: 235px;
   position: absolute;
   right: 170px;
@@ -165,7 +164,6 @@
     top: 474px;
     left: 702px;
 }
-
 
 /*Pop Up Match*/
 
