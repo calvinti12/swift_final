@@ -1,15 +1,5 @@
-<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
-.swift-logo{
-  width: 100px;
-  height: 60px;
-  position: absolute;
-  left: 12px;
-  top: 31px;
-}
-​
-=======
 #swift-logo{
   width: 100px;
   height: 60px;
@@ -19,17 +9,13 @@
   color: white;
 }
 
->>>>>>> master
+
 .nav-bar{
   width: 55px;
   height: 55px;
   position: absolute;
   right: 17px;
   top: 19px;
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 }
 
 .video-large{
@@ -43,23 +29,14 @@
 }
 
 .timer-left{
-
   height: 150px;
   width: 150px;
   position: absolute;
   top: 250px;
   right: 336px;
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 }
 
 .video-small{
-<<<<<<< HEAD
-=======
-
->>>>>>> master
   height: 100px;
   width: 125px;
   position: absolute;
@@ -68,10 +45,6 @@
 }
 
 .leave-button{
-<<<<<<< HEAD
-=======
-
->>>>>>> master
   height: 40px;
   width: 100px;
   position: absolute;
@@ -79,11 +52,7 @@
   left: 445px;
 }
 
-.flash-card-profile{
-<<<<<<< HEAD
-=======
-
->>>>>>> master
+.flash-card-profile {
   height: 318px;
   width: 235px;
   position: absolute;
@@ -136,10 +105,6 @@
   100% {opacity:1; transform:scale(1);}
 }
 
-<<<<<<< HEAD
-=======
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
->>>>>>> master
 .pie {
   width: 90px;
   height: 90px;
@@ -166,13 +131,8 @@
 #timer {
     position: absolute; /* fix this please, should be relative */
     left: 39%;
-<<<<<<< HEAD
     top: 52%;
-=======
-
     top: 52%;
-
->>>>>>> master
 }
 
 #time {
@@ -181,13 +141,8 @@
   top: 32%;
   left: 29%;
   color: #607D8B;
-<<<<<<< HEAD
 }
 ​
-=======
-  }
-
->>>>>>> master
 .degree {
   /*90 + ( 360 * .1 )*/
   background-image: linear-gradient(90deg, transparent 50%, white 50%), linear-gradient(90deg, white 50%, transparent 50%);
@@ -208,7 +163,6 @@
     position: absolute;
     top: 474px;
     left: 702px;
-<<<<<<< HEAD
 }
 
 
@@ -241,8 +195,4 @@
   border: none;
   border-radius: 4px;
   color: white;
-=======
-
-
->>>>>>> master
 }
