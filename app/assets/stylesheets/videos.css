@@ -53,7 +53,6 @@
   left: 445px;
 }
 
-
 .flash-card-profile {
   height: 318px;
   width: 235px;
@@ -156,7 +155,6 @@
   width: 500px;
   height: 380px;
   z-index: 4;
-  display: none;
   left: -10px;
   top: -10px;
 }
@@ -177,7 +175,6 @@
   background: white;
   border-radius: 4px;
   border: 1px solid #CCCCCC;
-  display: none;
 }
 
 
@@ -196,4 +193,8 @@
   border: none;
   border-radius: 4px;
   color: white;
+}
+
+#like_page {
+  display: none;
 }
