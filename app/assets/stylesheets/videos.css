@@ -53,7 +53,9 @@
   left: 445px;
 }
 
+
 .flash-card-profile {
+  height: 318px;
   width: 235px;
   position: absolute;
   right: 170px;
@@ -142,7 +144,7 @@
   left: 29%;
   color: #607D8B;
 }
-​
+
 .degree {
   /*90 + ( 360 * .1 )*/
   background-image: linear-gradient(90deg, transparent 50%, white 50%), linear-gradient(90deg, white 50%, transparent 50%);
