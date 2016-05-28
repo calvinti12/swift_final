@@ -3,7 +3,6 @@
     def index
     	@users = User.all
     	@user = current_user
-    	end
   	@api_key = "45592332"
   	# @opentok = OpenTok::OpenTok.new(@api_key, 'ce4771d7c91a3f2e773ae76b1d6d9f6db5301e5e')
   	# @session = @opentok.create_session	
