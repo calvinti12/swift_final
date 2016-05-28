@@ -1,26 +1,32 @@
-<div id="preference_page">
-<div class ='preference_page'>
-      <form action="#">
-        <h1 id='linezz'>
-        <br>
-        <i class="fa fa-camera-retro fa-lg"></i>
-      </h1>
+  <div id="preference_page">
+      <div class ='preference_page'>
+        <form action="#">
+          <h1 id='linezz'>
+          <br>
+          <i class="fa fa-camera-retro fa-lg"></i>
+        </h1>
+
+
+    <div class="float-label">
+      <input type="text" name="f-name" id="f-city" placeholder='<%if @user.first_name != "" %><%= @user.first_name %>
+      <% else %><%='First name' %><% end %>'/>
+      <label for="f-name"></label>
+    </div>
+
+    <div class="float-label">
+      <input type="text" name="f-name" id="f-city" placeholder='<%if @user.last_name != "" %><%= @user.last_name %><% else %><%='Last name' %><% end %>'/>
+      <label for="f-name"></label>
+    </div>
 
       <div class="float-label">
-      <input type="text" name="f-name" id="f-country" placeholder='Country'/>
+      <input type="text" name="f-name" id="f-country" placeholder='<%if @user.country != "" %><%=@user.country %><%else %><%='Country' %><% end %>'/>
       <label for="f-name"></label>
     </div>
 
-       <div class="float-label">
-      <input type="text" name="f-name" id="f-state" placeholder='State' />
+    <div class="float-label">
+      <input type="text" name="f-name" id="f-state" placeholder='<%if @user.state != "" %><%= @user.state %><%else %><%='State' %><% end %>'/>
       <label for="f-name"></label>
     </div>
-
-        <div class="float-label">
-      <input type="text" name="f-name" id="f-city" placeholder='City' />
-      <label for="f-name"></label>
-    </div>
-
 
 
   <!--Row-->
