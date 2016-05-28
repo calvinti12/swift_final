@@ -8,7 +8,7 @@
         <% if user.image.model[:image].nil? %>
           <%=image_tag("match.png")%>
         <%else%>
-          <%=image_tag(@user.image.model[:image])%>
+          <%=image_tag user.image.url :thumb %>
         <%end%>
         <p>
           <%=user.description%>
