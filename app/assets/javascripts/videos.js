@@ -24,11 +24,10 @@ myCounter = setInterval(function () {
 
   if(count==0){       // trigger events when timer runs out 
     less = 0
-    popuplike()
-    timerhide()
-    videohide()
-    leavehide()
     disconnect()
+    $('#video_page').hide();
+    $('#like_page').show();
+
     }; // find proper fix for this issue. javascript won't stop :(
   // if(count==0) clearInterval(myCounter);
 }, 1000);
@@ -120,6 +119,10 @@ $( document ).ready(function(){                 // when leave button is clicked,
 $( document ).ready(function(){
   $ ( '#match-yes-btn' ).on('click', function(e){
     e.preventDefault();
+    debugger
+    flashshow();
+    $('#like_page').hide();
+    $('#like').hide();
     $.ajax({
       method: 'POST',
       url: '/match'
@@ -131,7 +134,7 @@ $( document ).ready(function(){
   $ ( '#match-no-btn' ).on('click', function(e){
     e.preventDefault();
     flashshow();
-    $('#video_page').hide();
+    $('#like').hide();
     disconnect();
   })
 });
