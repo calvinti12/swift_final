@@ -130,6 +130,7 @@ h1{
     padding: 15px;
     background-color: #fff;
     font-size: 22px;
+    z-index: 5;
   color: #2ecc71;
   cursor: pointer;
   @include transition(all .3s ease);
