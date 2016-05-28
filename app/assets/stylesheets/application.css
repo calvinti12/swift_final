@@ -9,7 +9,7 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *  
+ *
  *= require_self
  *= require chosen
  *= require videos
@@ -108,7 +108,7 @@ li a:hover {
 
 a.swift-pic{
   position: relative;
-  color: white;
+  color: white !important;
   right: -1093px;
   top: 31px;
 }
@@ -146,3 +146,12 @@ background-color: transparent;
 
 
 
+.swift-logo{
+  font-family :'Pacifico', cursive;
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  right: 78px;
+  top: 22px;
+  color: white;
+}

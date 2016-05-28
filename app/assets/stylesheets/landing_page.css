@@ -283,18 +283,20 @@ a.big-swift {
 /*Swift-Desc*/
 
 .swift-container{
-height: 680px;
-
+  width: 800px;
+  height: 680px;
+  position: relative;
+  bottom: 680px;
+  left: 86px;
 }
 
 .swift-desc {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    color: black;
-    width: 950px;
-    position: absolute;
-    left: 168px;
-    bottom: -120px;
+  position: relative;
+  top: 732px;
+  font-size: 52px;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+      left: 230px;
 }
 
 
