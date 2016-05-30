@@ -22,6 +22,8 @@ gem 'opentok'
 
 gem 'fog'
 
+gem 'aws-sdk'
+
 gem 'puma'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
