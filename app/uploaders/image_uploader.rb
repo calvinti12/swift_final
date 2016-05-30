@@ -1,5 +1,5 @@
 # encoding: utf-8
-
+require 'aws-sdk'
 class ImageUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
