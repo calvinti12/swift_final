@@ -3,6 +3,7 @@ $( document ).ready(function(){                 // when leave button is clicked,
   	e.preventDefault()
   	$('#video_page').hide();
     $( '#payment_plan_page' ).hide();
+    $( '#payment_braintree' ).hide();
     flashhide()
   	$('#preference_page').show();	
   })
@@ -13,6 +14,7 @@ $( document ).ready(function(){                 // when leave button is clicked,
   	e.preventDefault()
   	$('#preference_page').hide();
     $( '#payment_plan_page' ).hide();
+    $( '#payment_braintree' ).hide();
     flashhide()
   	$.ajax({
       method: 'POST',
@@ -41,6 +43,7 @@ $( document ).ready(function(){
     $('#preference_page').hide();
     $( '#payment_plan_page' ).hide();
     $( '#video_page').hide();
+    $( '#payment_braintree' ).hide();
     flashshow()
   })
 })
@@ -51,7 +54,15 @@ $( document ).ready(function(){
     $( '#payment_plan_page' ).show();
     $('#preference_page').hide();
     $( '#video_page').hide();
+    $( '#payment_braintree' ).hide();
     flashhide();
   })
 })
 
+$( document ).ready(function(){
+  $( '.button_premium_plan' ).on('click', function(e){
+    e.preventDefault()
+    $( '#payment_braintree' ).show();
+    flashhide();
+  })
+})
