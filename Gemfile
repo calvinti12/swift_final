@@ -19,6 +19,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # opentok used for tokbox authentication and session creation
 gem 'opentok'
 
+gem 'fog'
+
 gem 'puma'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
