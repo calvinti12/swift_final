@@ -39,7 +39,7 @@ $( document ).ready(function(){
     e.preventDefault()
     $('#preference_page').hide();
     $( '#payment_plan_page' ).hide();
-    $( '#video_page').hide();
+    $( 'video_page_container').hide();
     $( '#payment_braintree' ).hide();
     flashshow()
     $('html,body').scrollTop(0);
@@ -51,7 +51,7 @@ $( document ).ready(function(){
     e.preventDefault()
     $( '#payment_plan_page' ).show();
     $('#preference_page').hide();
-    $( '#video_page').hide();
+    $( '.video_page_container').hide();
     $( '#payment_braintree' ).hide();
     flashhide();
     $('html,body').scrollTop(0);
