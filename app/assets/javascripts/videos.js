@@ -129,7 +129,7 @@ $( document ).ready(function(){
     $('#like').hide();
     $.ajax({
       method: 'POST',
-      url: '/match'
+      url: '/render_video'
     })
   })
 });
