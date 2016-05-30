@@ -17,13 +17,8 @@ $( document ).ready(function(){                 // when leave button is clicked,
     $( '#payment_plan_page' ).hide();
     $( '#payment_braintree' ).hide();
     flashhide()
-  	$.ajax({
-      method: 'POST',
-  		url: '/video_call' 
-  	})
     createSession()
   	$('#video_page').show()
-    $('.video_page_container').show();
     $('html,body').scrollTop(0);
   })
 })
