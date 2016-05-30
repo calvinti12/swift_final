@@ -39,7 +39,7 @@ $( document ).ready(function(){
     e.preventDefault()
     $('#preference_page').hide();
     $( '#payment_plan_page' ).hide();
-    $( 'video_page_container').hide();
+    $( '.video_page_container').hide();
     $( '#payment_braintree' ).hide();
     flashshow()
     $('html,body').scrollTop(0);
