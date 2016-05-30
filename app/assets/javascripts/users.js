@@ -42,5 +42,6 @@ debugger
   })
   $('#preference_page').hide();
   flashshow();
+  $('html,body').scrollTop(0);
 })
 });
