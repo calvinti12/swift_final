@@ -7,6 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 User.create( first_name: 'Masalah', last_name: 'Bank', age: 24, country: 'Malaysia', state: 'Selangor', gender: 'female', prefer_gender: 'male', prefer_country: 'Australia', prefer_state: 'Perth', prefer_start_age: 18, prefer_end_age: 22, email: 'onetwso@gmail.com', description: "Female" ,encrypted_password: SecureRandom.urlsafe_base64, remember_token: SecureRandom.urlsafe_base64, remote_image_url:('http://www.greatdatedeals.com/wp-content/uploads/2016/03/video-chat.jpg'))
 
+User.create( first_name: 'Alice', last_name: 'Spring', age: 19, country: 'Malaysia', state: 'Selangor', gender: 'female', prefer_gender: 'male', prefer_country: 'Malaysia', prefer_state: 'Selangor', prefer_start_age: 19, prefer_end_age: 28, email: 'onettwo@gmail.com', description: "Female" ,encrypted_password: SecureRandom.urlsafe_base64, remember_token: SecureRandom.urlsafe_base64, remote_image_url:('https://lh3.googleusercontent.com/zAYVZmw-i7ZAU177uq1_-wnall5vD6N_ibmr59SmA9nQlMlgk4wqDUNWB4gy_W_CaYZe2g=s85'))
 
 # user1 = User.create(first_name: 'Anatah', last_name: 'Sam', age: 20, country: 'Malaysia', state: 'Selangor', gender: 'female', prefer_gender: 'male', prefer_country: 'Malaysia', prefer_state: 'Selangor', prefer_start_age: 20, prefer_end_age: 20, email: 'onetwo@gmail.com', description: "Female" ,encrypted_password: SecureRandom.urlsafe_base64, remember_token: SecureRandom.urlsafe_base64, image: File.new("#{asset-url("card_angmo1.png")}"))
 
