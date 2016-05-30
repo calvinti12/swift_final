@@ -125,6 +125,7 @@ $( document ).ready(function(){
     e.preventDefault();
     debugger
     flashshow();
+    $('html,body').scrollTop(0);
     $('#like_page').hide();
     $('#like').hide();
     $.ajax({
@@ -138,6 +139,7 @@ $( document ).ready(function(){
   $ ( '#match-no-btn' ).on('click', function(e){
     e.preventDefault();
     flashshow();
+    $('html,body').scrollTop(0);
     $('#like_page').hide();
     $('#like').hide();
     disconnect();
