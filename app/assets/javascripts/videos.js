@@ -25,7 +25,7 @@ myCounter = setInterval(function () {
   if(count==0){       // trigger events when timer runs out 
     less = 0
     disconnect()
-    $('#video_page').hide();
+    $('.video_page_container').hide();
     $('#like_page').show();
 
     }; // find proper fix for this issue. javascript won't stop :(
