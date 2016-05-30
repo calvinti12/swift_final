@@ -8,8 +8,7 @@
   	# @session = @opentok.create_session	
   	 @session_id = '2_MX40NTU5ODEzMn5-MTQ2NDYwMTY3NzI0N35TY1hTS1Z1SWdMYXFkaDdYeTlOdEx5T1h-fg'
       @token = 'T1==cGFydG5lcl9pZD00NTU5ODEzMiZzaWc9ODAzZWMxNmNlYmM3Mzc5NjAxMDI4NTRmNjNkZDY0NzIzNmIxMGNjMTpzZXNzaW9uX2lkPTJfTVg0ME5UVTVPREV6TW41LU1UUTJORFl3TVRZM056STBOMzVUWTFoVFMxWjFTV2RNWVhGa2FEZFllVGxPZEV4NVQxaC1mZyZjcmVhdGVfdGltZT0xNDY0NjAxNjk1Jm5vbmNlPTAuMDAzNDU0MTA3NzkxMTg1Mzc5JnJvbGU9cHVibGlzaGVyJmV4cGlyZV90aW1lPTE0NjQ2ODgwOTQ='
-      end
-      
+    end
 
     def render_video
       @api_key = "45592332"
