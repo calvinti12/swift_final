@@ -1,5 +1,5 @@
 function startTimer () {
-var totaltime = 10;
+var totaltime = 20;
 function update(percent){
   var deg;
   if(percent<(totaltime/2)){

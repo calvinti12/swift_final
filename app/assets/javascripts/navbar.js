@@ -5,6 +5,7 @@ $( document ).ready(function(){                 // when leave button is clicked,
     $( '#payment_plan_page' ).hide();
     $( '#payment_braintree' ).hide();
     flashhide()
+    $('html,body').scrollTop(0);
   	$('#preference_page').show();	
   })
 })
@@ -23,6 +24,7 @@ $( document ).ready(function(){                 // when leave button is clicked,
     createSession()
   	$('#video_page').show()
     $('.video_page_container').show();
+    $('html,body').scrollTop(0);
   })
 })
 
@@ -45,6 +47,7 @@ $( document ).ready(function(){
     $( '#video_page').hide();
     $( '#payment_braintree' ).hide();
     flashshow()
+    $('html,body').scrollTop(0);
   })
 })
 
@@ -56,6 +59,7 @@ $( document ).ready(function(){
     $( '#video_page').hide();
     $( '#payment_braintree' ).hide();
     flashhide();
+    $('html,body').scrollTop(0);
   })
 })
 
