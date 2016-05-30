@@ -142,7 +142,7 @@ background-color: transparent;
   z-index: -1;
 }
 
-#video_page {
+.video_page_container {
   display: none;
 }
 

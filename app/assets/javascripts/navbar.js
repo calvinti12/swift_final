@@ -1,7 +1,7 @@
 $( document ).ready(function(){                 // when leave button is clicked, disconnect from server
   $( '#preference_btn').on('click', function(e){
   	e.preventDefault()
-  	$('#video_page').hide();
+  	$('.video_page_container').hide();
     $( '#payment_plan_page' ).hide();
     $( '#payment_braintree' ).hide();
     flashhide()
@@ -18,7 +18,7 @@ $( document ).ready(function(){                 // when leave button is clicked,
     $( '#payment_braintree' ).hide();
     flashhide()
     createSession()
-  	$('#video_page').show()
+  	$('.video_page_container').show()
     $('html,body').scrollTop(0);
   })
 })
