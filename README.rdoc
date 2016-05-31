@@ -3,7 +3,7 @@ README
 ========================================================================
 
 This project was created as part of the final project for NEXT Academy. The app uses the Tokbox API to connect users for a online speeddate. A live demo can be found on heroku: 
-(https://swift-dating.herokuapp.com)
+https://swift-dating.herokuapp.com
 
 ========================================================================
 
